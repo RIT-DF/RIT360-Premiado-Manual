@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [bp-21-apuracao]
 source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15]
-last_verified: 2026-07-05
+last_verified: 2026-07-23
 status: publicado
 ---
 
@@ -42,7 +42,7 @@ Antes, a apuração pela Loteria Federal só funcionava com cartões **numerados
 
 Para usar, abra a campanha, vá na aba **Dados legais** e ligue **"Apuração oficial pela Loteria Federal"**. Ao ligar:
 
-- cada cartão passa a **mostrar o número de sorteio** em todos os lugares — na hora de comprar, no e-mail de confirmação, no pedido e no painel "Meus cartões" — para o participante saber com que número está concorrendo;
+- cada cartão passa a **mostrar o número de sorteio** em todos os lugares onde aparece — na **grade de escolha dos cartões**, no **carrinho**, no **e-mail de confirmação**, no **pedido**, no painel **"Meus cartões"** e no **resultado do sorteio** — para o participante saber, do início ao fim, com que número está concorrendo;
 - a apuração passa a usar a **Loteria Federal** (o sorteio interno fica desligado nessa campanha).
 
 Há também, ao lado, a opção **"Esta campanha depende de autorização de sorteio (SPA/MF)"**: quando marcada, o sistema **recomenda** ligar a apuração pela Loteria (é o método que atende ao rito legal de sorteios autorizados) e disponibiliza uma **cláusula de regulamento** pronta sobre a base na Loteria Federal.

@@ -15,6 +15,21 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 
 ---
 
+## Versão 2.15 — Carrinho mais claro e o número do sorteio à mostra
+
+Melhorias no que o **comprador** vê ao participar da campanha:
+
+- **O carrinho mostra o que você está levando.** Cada cartão aparece pelo seu **nome** (e, nas campanhas apuradas pela **Loteria Federal**, com o **número de sorteio** ao lado), então dá para conferir exatamente quais cartões estão no pedido antes de pagar.
+- **Quantidade travada, porque cada cartão é único.** Não existe "2x" o mesmo cartão: a quantidade de cada um fica **fixa em 1** no carrinho. Para desistir de um cartão, basta **removê-lo** — e ele **volta na hora** para o pool, liberando para outra pessoa.
+- **Número de sorteio do começo ao fim.** Nas campanhas pela **Loteria Federal**, o número de sorteio de cada cartão agora aparece **em toda a jornada** — da **grade de escolha** ao **carrinho**, ao **e-mail**, ao painel **"Meus cartões"** e ao **resultado** — não só em alguns pontos. Veja em [Realizar o sorteio](/guias/realizar-sorteio/).
+
+**Também nesta versão:**
+
+- Na aba **Página pública** da campanha, o **termômetro de meta** ganhou a opção **"Exibir o termômetro só a partir de X%"** — você segura a barra fora do ar enquanto as vendas engatam e só a revela quando o progresso fica animador. Veja em [Personalizar a página pública](/guias/personalizar-pagina-publica/).
+- A **vitrine de prêmios** da página pública passou a exibir os prêmios em **duas colunas**, com melhor aproveitamento do espaço.
+
+---
+
 ## Versão 2.13 — Acessibilidade: tamanho do texto na página pública
 
 A página pública de cada campanha agora tem um **controle de tamanho do texto** para quem visita: um box discreto no **canto superior direito do topo**, com os botões **A−**, **A** e **A+**.
@@ -112,7 +127,7 @@ O passo a passo está em [Enviar feedback](/guias/enviar-feedback/).
 Agora dá para apurar pela **Loteria Federal** também as campanhas de **lista temática** (cartões que são nomes, não números).
 
 - Cada cartão ganha um **número de sorteio** (a posição na lista, ex.: *Duna · 07*), que casa com o resultado oficial da Loteria Federal.
-- Você liga isso na aba **Dados legais** da campanha, em **"Apuração oficial pela Loteria Federal"**. A partir daí o número aparece em todos os lugares onde o cartão é mostrado (compra, e-mail, pedido, "Meus cartões") — o participante sabe com que número concorre.
+- Você liga isso na aba **Dados legais** da campanha, em **"Apuração oficial pela Loteria Federal"**. A partir daí o número aparece em todos os lugares onde o cartão é mostrado (grade de escolha, carrinho, e-mail, pedido, "Meus cartões" e resultado) — o participante sabe com que número concorre.
 - Há também um sinalizador **"depende de autorização (SPA/MF)"**, que recomenda a Loteria e oferece uma **cláusula de regulamento** pronta.
 
 Veja em [Realizar o sorteio](/guias/realizar-sorteio/).

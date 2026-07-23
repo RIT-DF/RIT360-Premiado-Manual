@@ -7,7 +7,7 @@ task: painel-meus-cartoes
 role: admin
 routes: ["/meus-cartoes", "#/blocos"]
 screenshots: [bp-36-meus-cartoes-painel, bp-37-meus-cartoes-painel-mobile, bp-38-meus-cartoes-formulario, publica-consulte-numeros]
-source_docs: [CHANGELOG.md#1.11.0, ARCHITECTURE.md#adr-014]
+source_docs: [CHANGELOG.md#1.11.0, CHANGELOG.md#2.15.2, ARCHITECTURE.md#adr-014]
 last_verified: 2026-07-23
 status: publicado
 ---
@@ -37,7 +37,7 @@ A mesma consulta aparece **embutida na página pública da campanha**, na seçã
 
 O painel agrupa tudo **por campanha**. Para cada campanha em que a pessoa participou, aparece:
 
-- os **números dos cartões** dela, em etiquetas;
+- os **cartões** dela, em etiquetas — o número, ou o nome nas listas temáticas (e, nas campanhas apuradas pela **Loteria Federal**, o nome acompanhado do **número de sorteio**, ex.: *Gato-do-mato · 047*);
 - a **situação do pedido** (por exemplo, "Concluído");
 - quando o sorteio já aconteceu, o **resultado** — com destaque **"🎉 Você foi contemplado!"** se um dos cartões dela ganhou, o número sorteado e um link para **conferir a apuração**;
 - um atalho para **ver a campanha e o regulamento**.

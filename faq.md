@@ -2,7 +2,7 @@
 title: "Dúvidas frequentes"
 nav_order: 7
 permalink: /faq/
-last_verified: 2026-07-05
+last_verified: 2026-07-23
 status: publicado
 ---
 
@@ -45,7 +45,10 @@ Sim. Os cartões podem ser **números** ou **nomes de uma lista temática**. O p
 Não com vendas em andamento. Quantidade e valor são definidos no **rascunho** e travam após a publicação, para proteger a integridade da rifa. Planeje antes de abrir.
 
 ### Dois compradores podem levar o mesmo cartão?
-Não. Há um mecanismo de **reserva atômica**: quando um cartão está no carrinho de alguém, ninguém mais o compra. Se a compra não é concluída no tempo de reserva, ele volta ao pool.
+Não. Há um mecanismo de **reserva atômica**: quando um cartão está no carrinho de alguém, ninguém mais o compra. Se a compra não é concluída no tempo de reserva — ou se a pessoa **remove o cartão do carrinho** —, ele volta ao pool na hora, livre para outra pessoa.
+
+### Por que não consigo mudar a quantidade de um cartão no carrinho?
+Porque cada cartão é **único** — não existe "2 unidades" do mesmo número ou nome. No carrinho, cada cartão aparece pelo seu nome (e, nas campanhas apuradas pela **Loteria Federal**, pelo **número de sorteio**), com a quantidade **fixa em 1**. Para desistir de um cartão, **remova-o** do carrinho: ele é liberado imediatamente para outra pessoa.
 
 ### Posso ter mais de um prêmio na mesma campanha?
 Sim. Na etapa **Dados do Prêmio**, use **+ Adicionar prêmio** para incluir 1º, 2º, 3º lugar… na ordem em que serão sorteados. Todos saem **da mesma base de cartões vendidos, sem repetir número** — cada prêmio vai para um cartão diferente. O regulamento, o resultado público e os e-mails passam a mostrar um ganhador por prêmio. Se quiser um prêmio só, deixe apenas o primeiro. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/).
