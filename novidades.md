@@ -3,7 +3,7 @@ title: "Novidades"
 nav_order: 8
 permalink: /novidades/
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-22
+last_verified: 2026-07-23
 status: publicado
 ---
 
@@ -12,6 +12,18 @@ status: publicado
 O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no topo do painel, ao lado da logo (ex.: *RIT360 Premiado · v1.2.1*).
 
 > Esta é uma versão amigável do histórico técnico. O registro completo para desenvolvedores fica no `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.13 — Acessibilidade: tamanho do texto na página pública
+
+A página pública de cada campanha agora tem um **controle de tamanho do texto** para quem visita: um box discreto no **canto superior direito do topo**, com os botões **A−**, **A** e **A+**.
+
+- **A−** reduz, **A+** amplia e **A** volta ao padrão — quem enxerga menos ajusta a leitura sozinho.
+- A preferência **fica guardada no navegador do visitante**: ao voltar, o tamanho escolhido é mantido.
+- Aparece **automaticamente em todas as campanhas**, sem nenhuma configuração de sua parte.
+
+Como fica para o público em [Personalizar a página pública](/guias/personalizar-pagina-publica/#acessibilidade--tamanho-do-texto).
 
 ---
 

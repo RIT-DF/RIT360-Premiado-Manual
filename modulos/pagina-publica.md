@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/pagina-publica/
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
-screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade]
-last_verified: 2026-07-22
+screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade, publica-tamanho-texto]
+last_verified: 2026-07-23
 status: publicado
 ---
 
@@ -25,6 +25,7 @@ Cada campanha tem um **hotsite próprio**, mobile-first, no endereço `/campanha
 - O **regulamento**.
 - A **barra de compartilhamento** (WhatsApp, Facebook, X, LinkedIn, copiar link).
 - O **resultado** do sorteio, quando a campanha é apurada — com um ganhador por prêmio, sempre mascarado por padrão.
+- Um **controle de acessibilidade de tamanho do texto** (**A− / A / A+**) no canto superior direito do topo, que o visitante usa para ampliar ou reduzir a leitura. Aparece sozinho em toda campanha. Detalhes em [Personalizar a página pública](/guias/personalizar-pagina-publica/#acessibilidade--tamanho-do-texto).
 
 ## Configuração (guiada por temas)
 

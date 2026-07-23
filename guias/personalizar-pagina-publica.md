@@ -6,8 +6,8 @@ permalink: /guias/personalizar-pagina-publica/
 task: personalizar-pagina-publica
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
-screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video]
-source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0]
+screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video]
+source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0, CHANGELOG.md#2.13.0, CHANGELOG.md#2.13.2]
 last_verified: 2026-07-23
 status: publicado
 ---
@@ -138,6 +138,17 @@ A página reúne, em uma rolagem: o prêmio com as fotos, a história da causa, 
 **Esquema escuro** (mesma campanha, mesmas cores — só muda o fundo):
 
 ![Página pública no esquema escuro](/assets/screenshots/tema-04-publica-escura.png)
+
+### Acessibilidade — tamanho do texto
+
+Toda página pública traz um **controle de tamanho do texto** para o visitante, no **canto superior direito do topo (hero)**: um pequeno box com os botões **A−**, **A** e **A+**.
+
+- **A−** diminui o texto da página; **A+** aumenta; **A** volta ao tamanho padrão.
+- A escolha vale para a leitura daquela pessoa (é confortável para quem enxerga menos) e **fica guardada no navegador dela** — ao voltar à página, o tamanho preferido é mantido.
+
+Esse controle aparece **sozinho, em todas as campanhas**, sem nenhuma configuração de sua parte.
+
+![Controle de tamanho do texto (A− / A / A+) no canto do topo da página](/assets/screenshots/publica-tamanho-texto.png)
 
 ## Compra: como o participante age
 
