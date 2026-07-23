@@ -114,8 +114,11 @@ Na seção **Meta da campanha**, marque **Exibir termômetro de meta** e informe
 
 - **Meta de cartões** — quantos cartões você quer vender (opcional).
 - **Meta em R$** — quanto você quer arrecadar (opcional).
+- **Exibir somente a partir de (% da meta atingida)** — o percentual mínimo para a barra começar a aparecer. Deixe **0** para exibir sempre.
 
-Você pode preencher só uma das duas, ou as duas. A barra mostra o progresso com marcos em 25%, 50%, 75% e 100%, e exibe **🎯 Meta atingida!** quando chega lá.
+Você pode preencher só uma das duas metas, ou as duas. A barra mostra o progresso com marcos em 25%, 50%, 75% e 100%, e exibe **🎯 Meta atingida!** quando chega lá.
+
+> 💡 **Exibir a barra só depois de um avanço.** No começo, uma barra quase vazia pode desanimar quem visita a página. Use **"Exibir somente a partir de X%"** para a barra **só aparecer depois que a campanha atingir aquele percentual** — por exemplo, `50` faz a barra surgir apenas quando a meta chega à metade. Antes disso, a página simplesmente não mostra o termômetro. Se você definir as duas metas (cartões e R$), vale a que estiver **mais adiantada**.
 
 > ⚠️ A **meta em R$** só aparece publicamente se os **indicadores financeiros não estiverem ocultos** (veja o Painel de transparência acima). Se você preferir não mostrar valores, deixe só a meta de cartões — o termômetro de cartões aparece normalmente.
 
