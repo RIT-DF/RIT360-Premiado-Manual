@@ -3,7 +3,7 @@ title: "Novidades"
 nav_order: 8
 permalink: /novidades/
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-23
+last_verified: 2026-08-01
 status: publicado
 ---
 
@@ -12,6 +12,26 @@ status: publicado
 O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no topo do painel, ao lado da logo (ex.: *RIT360 Premiado · v1.2.1*).
 
 > Esta é uma versão amigável do histórico técnico. O registro completo para desenvolvedores fica no `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.18 — Compra de cartões sem confusão no carrinho
+
+Ajustes no momento da compra, para o **comprador**:
+
+- **Cartões de rifa são comprados separados de outros produtos.** Se você tiver outros produtos da loja no carrinho e tentar adicionar cartões — ou o contrário —, aparece um **aviso** pedindo para finalizar (ou esvaziar) a compra atual primeiro. Isso evita conflitos no checkout (entrega, conclusão do pedido e reservas dos cartões). **Cartões de campanhas diferentes continuam podendo ser comprados juntos**, no mesmo pedido.
+- **O checkout não pede mais endereço de entrega.** Como o cartão é digital (não há nada para enviar pelo correio), o produto passou a ser **virtual**: a compra fica mais curta e o pedido se conclui sozinho após o pagamento.
+
+---
+
+## Versão 2.17 — E-mails com a cara da sua organização
+
+Os e-mails que a campanha envia (confirmação de compra, resultado, lembrete etc.) ganharam um **visual próprio**, para não se confundirem com os e-mails padrão da loja:
+
+- **Cabeçalho** com a **logo da sua organização** (ou o nome, se não houver logo) no topo, separada do texto por uma **linha fina na cor principal da OSC**.
+- **Rodapé** com a **logo do RIT360** e o contato da organização.
+
+É uma mudança **visual** — os textos e as variáveis dos e-mails continuam os mesmos. Não é preciso configurar nada: o novo layout vale automaticamente para todos os e-mails. Veja em [Configurar os e-mails](/guias/configurar-emails/).
 
 ---
 

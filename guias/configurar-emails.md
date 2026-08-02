@@ -8,7 +8,7 @@ role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-13-emails-config, bp-14-emails-logs]
 source_docs: [PRD_Bussola_Premiada.md#8.18, PRD_Bussola_Premiada.md#8.19]
-last_verified: 2026-07-05
+last_verified: 2026-08-01
 status: publicado
 ---
 
@@ -34,7 +34,7 @@ O plugin já traz modelos prontos para os momentos-chave:
 
 ## Revisar os textos
 
-Na aba **Templates**, edite o assunto e o corpo de cada e-mail. Você pode usar **variáveis** como o nome da campanha e os cartões, que o plugin substitui no envio. O layout já usa o cabeçalho e o rodapé da sua organização.
+Na aba **Templates**, edite o assunto e o corpo de cada e-mail. Você pode usar **variáveis** como o nome da campanha e os cartões, que o plugin substitui no envio. O layout já traz um **cabeçalho com a logo (ou o nome) da sua organização**, uma linha na **cor da OSC** e um **rodapé com a logo do RIT360** — automático, sem configuração.
 
 ![Aba Templates de e-mail](/assets/screenshots/bp-12-emails-templates.png)
 

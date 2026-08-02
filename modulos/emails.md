@@ -6,7 +6,7 @@ permalink: /modulos/emails/
 role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-14-emails-logs]
-last_verified: 2026-07-05
+last_verified: 2026-08-01
 status: publicado
 ---
 
@@ -33,6 +33,10 @@ Confirmação de compra · Nova venda (admin) · Estoque esgotado · Lançamento
 
 - **Transacional** (ex.: confirmação de compra) — sempre enviado, é parte da transação.
 - **Promocional** (ex.: lançamento) — só para quem **consentiu**. O consentimento é capturado no checkout com a caixa **não** pré-marcada, e cada promocional traz **descadastro** de um clique.
+
+## Visual próprio da organização
+
+Todos os e-mails do plugin usam um **layout institucional** que os diferencia dos e-mails padrão da loja: um **cabeçalho** com a **logo da sua organização** (ou o nome, se não houver logo) sobre fundo branco, separado do corpo por uma **linha na cor principal da OSC**, e um **rodapé** com a **logo do RIT360** e o contato da organização. É automático e vale para todos os e-mails — você não precisa configurar nada.
 
 ## Multicanal por design
 

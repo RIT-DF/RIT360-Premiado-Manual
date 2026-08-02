@@ -2,7 +2,7 @@
 title: "Dúvidas frequentes"
 nav_order: 7
 permalink: /faq/
-last_verified: 2026-07-23
+last_verified: 2026-08-01
 status: publicado
 ---
 
@@ -49,6 +49,12 @@ Não. Há um mecanismo de **reserva atômica**: quando um cartão está no carri
 
 ### Por que não consigo mudar a quantidade de um cartão no carrinho?
 Porque cada cartão é **único** — não existe "2 unidades" do mesmo número ou nome. No carrinho, cada cartão aparece pelo seu nome (e, nas campanhas apuradas pela **Loteria Federal**, pelo **número de sorteio**), com a quantidade **fixa em 1**. Para desistir de um cartão, **remova-o** do carrinho: ele é liberado imediatamente para outra pessoa.
+
+### Posso comprar cartões junto com outros produtos da loja?
+Não no mesmo pedido. Os **cartões de rifa são comprados separadamente** dos demais produtos da loja, para evitar conflitos no checkout (entrega, conclusão do pedido e reservas). Se você tiver outros produtos no carrinho e tentar adicionar cartões — ou o contrário —, aparece um **aviso** pedindo para finalizar ou esvaziar a compra atual primeiro. **Cartões de campanhas diferentes**, porém, podem ser comprados **juntos**, no mesmo pedido.
+
+### O checkout pede endereço de entrega?
+Não. O cartão é digital (você o recebe por e-mail), então o produto é **virtual** — o checkout **não pede endereço de entrega** e o pedido se conclui automaticamente após o pagamento.
 
 ### Posso ter mais de um prêmio na mesma campanha?
 Sim. Na etapa **Dados do Prêmio**, use **+ Adicionar prêmio** para incluir 1º, 2º, 3º lugar… na ordem em que serão sorteados. Todos saem **da mesma base de cartões vendidos, sem repetir número** — cada prêmio vai para um cartão diferente. O regulamento, o resultado público e os e-mails passam a mostrar um ganhador por prêmio. Se quiser um prêmio só, deixe apenas o primeiro. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/).
