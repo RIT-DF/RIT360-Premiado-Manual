@@ -25,6 +25,8 @@ No menu **RIT360 Premiado**, abra **Auditoria**. O acesso é controlado pela per
 
 Ações relevantes ao longo do ciclo da campanha, por exemplo: publicação e alteração de regulamento, congelamento da base e finalização do sorteio, exportação de relatórios (com marca de mascaramento), mudanças de permissão, registro/remoção de doações à RIT, reagendamento de sorteio, entre outras. Cada registro guarda a **ação**, o **tipo e o identificador do objeto**, a **origem**, o **usuário** e a **data/hora**.
 
+Também entram aqui as **correções manuais de cartões** feitas em [Corrigir cartões](/guias/corrigir-cartoes/) — vínculo de um cartão a um pedido pago, liberação de cartão preso e as liberações excepcionais. Nesses casos, o registro guarda ainda a **justificativa** que quem corrigiu escreveu, visível ao expandir a linha.
+
 ## Filtrar e consultar
 
 A tela tem filtros por **Ação**, **Tipo de objeto**, **Origem**, **ID do objeto**, **Usuário**, **período** (de/até) e uma **busca** livre. Preencha o que precisar e clique em **Aplicar** (ou **Limpar** para recomeçar). Cada linha pode ser **expandida** para ver os detalhes do evento, e a lista é paginada.

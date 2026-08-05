@@ -44,7 +44,8 @@ Em **Campanhas**, você vê todas com seu status atual e acessa cada uma para ve
 
 - Quando alguém escolhe cartões, eles ficam **reservados** por alguns minutos.
 - Ao concluir o checkout, a reserva vira **pedido**; ao confirmar o pagamento, os cartões viram **vendidos**.
-- Se a compra não é concluída no tempo de reserva, os cartões **voltam ao pool** automaticamente.
+- Se a compra não é concluída no tempo de reserva, os cartões **voltam ao pool** automaticamente. O comprador é avisado no carrinho e, ao finalizar, o sistema tenta garantir os mesmos cartões — se algum já tiver dono, a compra é interrompida **antes de cobrar** (veja [Quando a reserva do cartão expira](/guias/reserva-expirada/)).
+- Se mesmo assim algo sair do trilho — um pedido pago sem cartão ou um cartão preso —, resolva pelo painel **Corrigir cartões** da campanha. Veja [Corrigir cartões](/guias/corrigir-cartoes/).
 - Pedidos cancelados, falhos ou reembolsados **liberam** os cartões de volta — exceto depois que a base do sorteio já foi congelada.
 
 > ✅ **Boas práticas**

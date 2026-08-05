@@ -3,7 +3,7 @@ title: "Novidades"
 nav_order: 8
 permalink: /novidades/
 source_docs: [CHANGELOG.md]
-last_verified: 2026-08-01
+last_verified: 2026-08-04
 status: publicado
 ---
 
@@ -12,6 +12,24 @@ status: publicado
 O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no topo do painel, ao lado da logo (ex.: *RIT360 Premiado · v1.2.1*).
 
 > Esta é uma versão amigável do histórico técnico. O registro completo para desenvolvedores fica no `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.19 — Ninguém paga sem receber o cartão, e você conserta sozinho quando precisar
+
+Duas frentes complementares: uma **evita** o problema, a outra dá a você a **saída** quando algo escapa.
+
+**Para quem compra:**
+
+- **O carrinho avisa quando a reserva expira.** Se o carrinho ficar parado além do tempo de reserva, aparece um aviso no próprio item — não mais uma surpresa depois do pagamento.
+- **Ao finalizar, o sistema tenta garantir os mesmos cartões.** Se todos continuarem livres, a compra segue normalmente e você nem percebe. Se alguém já tiver escolhido algum, a compra é **interrompida antes de qualquer cobrança**, dizendo qual cartão se perdeu — é só voltar e escolher outro. Veja [Quando a reserva do cartão expira](/guias/reserva-expirada/).
+
+**Para quem administra a campanha:**
+
+- **Novo painel "Corrigir cartões"**, na tela da campanha. Busque um cartão pelo número ou pelo nome e veja o estado real dele — situação, reserva, pedido e histórico.
+- **Vincule um cartão a um pedido pago** quando um comprador pagou e não recebeu — pela tela, sem depender de suporte técnico.
+- **Libere um cartão preso** que não voltou para a venda sozinho.
+- **Toda correção exige justificativa** e fica registrada com autor e data na [Trilha de auditoria](/modulos/auditoria/). Cartão vendido não tem ação por aqui, e depois do sorteio apurado a base de quem concorre fica protegida. Passo a passo em [Corrigir cartões](/guias/corrigir-cartoes/).
 
 ---
 

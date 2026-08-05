@@ -2,7 +2,7 @@
 title: "Dúvidas frequentes"
 nav_order: 7
 permalink: /faq/
-last_verified: 2026-08-01
+last_verified: 2026-08-04
 status: publicado
 ---
 
@@ -46,6 +46,12 @@ Não com vendas em andamento. Quantidade e valor são definidos no **rascunho** 
 
 ### Dois compradores podem levar o mesmo cartão?
 Não. Há um mecanismo de **reserva atômica**: quando um cartão está no carrinho de alguém, ninguém mais o compra. Se a compra não é concluída no tempo de reserva — ou se a pessoa **remove o cartão do carrinho** —, ele volta ao pool na hora, livre para outra pessoa.
+
+### Deixei o carrinho parado e apareceu "sua reserva expirou". Perdi o cartão?
+Não necessariamente. Ao finalizar, o sistema tenta garantir **os mesmos cartões**: se continuarem livres, a compra segue normalmente. Se alguém já tiver escolhido algum, a compra é **interrompida antes de qualquer cobrança**, dizendo qual cartão se perdeu — aí basta voltar ao carrinho e escolher outro. Veja [Quando a reserva do cartão expira](/guias/reserva-expirada/).
+
+### Um comprador pagou e não recebeu o cartão. Como resolvo?
+Pelo painel **Corrigir cartões**, na tela da campanha: você busca o cartão, informa o número do pedido pago, escreve a justificativa e aplica — o cartão passa a vendido e o pedido passa a exibir a linha "Cartões". Passo a passo em [Corrigir cartões](/guias/corrigir-cartoes/).
 
 ### Por que não consigo mudar a quantidade de um cartão no carrinho?
 Porque cada cartão é **único** — não existe "2 unidades" do mesmo número ou nome. No carrinho, cada cartão aparece pelo seu nome (e, nas campanhas apuradas pela **Loteria Federal**, pelo **número de sorteio**), com a quantidade **fixa em 1**. Para desistir de um cartão, **remova-o** do carrinho: ele é liberado imediatamente para outra pessoa.

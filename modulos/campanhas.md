@@ -45,6 +45,10 @@ Uma campanha se organiza em **abas de topo**:
 
 O passo a passo de criação está em [Criar a primeira campanha](/guias/criar-primeira-campanha/).
 
+## Corrigir cartões
+
+Na **coluna da direita** do formulário há o painel **Corrigir cartões**: você busca um cartão pelo número ou pelo nome, vê o estado real dele (situação, reserva, pedido e histórico) e resolve os dois problemas mais comuns — **comprador pagou e não recebeu o cartão** e **cartão preso que não volta para a venda**. Toda correção exige justificativa e fica registrada na auditoria. Passo a passo em [Corrigir cartões](/guias/corrigir-cartoes/).
+
 ## Estados da campanha
 
 Cada campanha percorre uma **máquina de estados** que protege a integridade da rifa. Os principais:

@@ -23,7 +23,7 @@ A seção **Configurações** guarda os dados da organização e os padrões glo
   ![Aba Identidade visual](/assets/screenshots/bp-16-config-identidade.png)
 - **Usuários** — atribui os **papéis** do plugin (Administrador da campanha, Auditor, Operador — um ou mais por pessoa) aos usuários do WordPress. Visível para o Administrador da organização e o administrador do site. Passo a passo em [Gerenciar usuários e papéis](/guias/gerenciar-usuarios/).
   ![Aba Usuários](/assets/screenshots/bp-27-config-usuarios.png)
-- **Configurações Globais da Campanha** — o **contato de dúvidas** que aparece no regulamento e os **padrões de reserva de cartões** (*Tempo de reserva do cartão* — por quantos minutos um cartão escolhido fica reservado para a pessoa concluir a compra — e *máximo de cartões por reserva*). Cada campanha pode sobrescrever esses padrões.
+- **Configurações Globais da Campanha** — o **contato de dúvidas** que aparece no regulamento e os **padrões de reserva de cartões** (*Tempo de reserva do cartão* — por quantos minutos um cartão escolhido fica reservado para a pessoa concluir a compra, **padrão: 15 minutos** — e *máximo de cartões por reserva*). Cada campanha pode sobrescrever esses padrões.
   ![Aba Configurações Globais da Campanha](/assets/screenshots/bp-28-config-globais-campanha.png)
 - **Banco de Cláusulas de Regulamento** — a biblioteca de cláusulas prontas usada no regulamento.
 - **Apuração** — os padrões globais de sorteio (método padrão, política do contemplado reembolsado).

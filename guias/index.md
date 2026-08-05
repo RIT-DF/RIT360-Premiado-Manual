@@ -30,6 +30,7 @@ Passo a passo das tarefas mais comuns. Se você sabe **o que** quer fazer mas n�
 
 7. [Painel da campanha](/guias/painel-da-campanha/)
 7. [Acompanhar as vendas](/guias/acompanhar-vendas/)
+8. [Corrigir cartões](/guias/corrigir-cartoes/) — comprador pagou e não recebeu o cartão, cartão preso
 8. [Realizar o sorteio](/guias/realizar-sorteio/)
 9. [Prestar contas](/guias/prestar-contas/)
 10. [Apoiar a RIT](/guias/apoiar-a-rit/)
@@ -37,3 +38,4 @@ Passo a passo das tarefas mais comuns. Se você sabe **o que** quer fazer mas n�
 ## Para o comprador
 
 11. [Painel "Meus cartões" do comprador](/guias/painel-meus-cartoes/)
+12. [Quando a reserva do cartão expira](/guias/reserva-expirada/)
