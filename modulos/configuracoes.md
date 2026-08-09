@@ -6,7 +6,7 @@ permalink: /modulos/configuracoes/
 role: admin
 routes: ["#/organizacao"]
 screenshots: [bp-15-config-organizacao, bp-16-config-identidade, bp-27-config-usuarios, bp-28-config-globais-campanha, bp-19-config-apuracao, bp-20-config-pdf]
-last_verified: 2026-07-05
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -26,7 +26,7 @@ A seção **Configurações** guarda os dados da organização e os padrões glo
 - **Configurações Globais da Campanha** — o **contato de dúvidas** que aparece no regulamento e os **padrões de reserva de cartões** (*Tempo de reserva do cartão* — por quantos minutos um cartão escolhido fica reservado para a pessoa concluir a compra, **padrão: 15 minutos** — e *máximo de cartões por reserva*). Cada campanha pode sobrescrever esses padrões.
   ![Aba Configurações Globais da Campanha](/assets/screenshots/bp-28-config-globais-campanha.png)
 - **Banco de Cláusulas de Regulamento** — a biblioteca de cláusulas prontas usada no regulamento.
-- **Apuração** — os padrões globais de sorteio (método padrão, política do contemplado reembolsado).
+- **Apuração** — os padrões globais de sorteio (política do contemplado reembolsado, exposição pública do ganhador) e a **busca automática do resultado da Loteria Federal**. O método de apuração **não** se define aqui: ele é escolhido em cada campanha, na aba Formulário.
   ![Aba Apuração](/assets/screenshots/bp-19-config-apuracao.png)
 - **PDF / Relatórios** — o motor de geração de PDF dos documentos.
   ![Aba PDF / Relatórios](/assets/screenshots/bp-20-config-pdf.png)

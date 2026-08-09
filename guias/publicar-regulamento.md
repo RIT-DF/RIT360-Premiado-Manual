@@ -6,8 +6,8 @@ permalink: /guias/publicar-regulamento/
 task: publicar-regulamento
 role: admin
 routes: ["#/campanhas/:id"]
-screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais, admin-aviso-republicar-regulamento]
-source_docs: [PRD_Bussola_Premiada.md#8.10, PRD_Bussola_Premiada.md#8.11]
+screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais, admin-aviso-republicar-regulamento, reg-apuracao-override, reg-apuracao-override-personalizado]
+source_docs: [PRD_Bussola_Premiada.md#8.10, PRD_Bussola_Premiada.md#8.11, CHANGELOG.md#2.24.0]
 last_verified: 2026-08-09
 status: publicado
 ---
@@ -20,17 +20,18 @@ O regulamento é **obrigatório**: nenhuma campanha entra no ar sem um regulamen
 
 ## Onde fica
 
-Abra a campanha e clique na aba de topo **Regulamento**. No topo há uma **barra de progresso** com as cinco etapas do assistente.
+Abra a campanha e clique na aba de topo **Regulamento**. No topo há uma **barra de progresso** com as etapas do assistente.
 
 ![Assistente de regulamento em etapas](/assets/screenshots/reg-assistente-etapas.png)
 
-## As cinco etapas
+## As etapas
 
 1. **Dados da campanha** — dados da organização e da campanha (nome, CNPJ, prêmio, datas, quantidade, valor) entram **sozinhos**; você só confere. Ajuste-os, se preciso, na campanha e em **Organização**.
-2. **Cláusulas essenciais** — as seções principais (critérios de participação, política de entrega etc.). Em cada campo há o botão **“+ Inserir da biblioteca”**: clique para trazer um **texto-modelo pronto** e então edite à vontade. Os campos com **\*** são obrigatórios.
-3. **Outras cláusulas** — cláusulas gerais (LGPD, foro, destinação à causa…) e qualquer texto livre, em forma de **cartões** que você adiciona, edita e remove. Use **“+ Inserir da biblioteca”** para começar de um modelo, ou **“+ Cláusula em branco”** para escrever do zero.
-4. **Ordenar cláusulas** — defina a **sequência** em que as cláusulas aparecem no documento final. Aqui as **essenciais e as outras aparecem juntas, numa lista só**, e você as reordena com as setas **↑ ↓**. As cláusulas de **Objeto** e **Apuração** ficam fixas no início.
-5. **Revisão** — pré-visualização fiel ao que o público verá + o botão **Publicar**.
+2. **Apuração** — aparece **só em campanhas de Loteria Federal**, com as cláusulas que explicam como o contemplado é encontrado. Elas entram prontas; aqui você pode ajustá-las se aquela campanha tiver alguma particularidade (veja [Personalizar o texto da apuração](#personalizar-apuracao)).
+3. **Cláusulas essenciais** — as seções principais (critérios de participação, política de entrega etc.). Em cada campo há o botão **“+ Inserir da biblioteca”**: clique para trazer um **texto-modelo pronto** e então edite à vontade. Os campos com **\*** são obrigatórios.
+4. **Outras cláusulas** — cláusulas gerais (LGPD, foro, destinação à causa…) e qualquer texto livre, em forma de **cartões** que você adiciona, edita e remove. Use **“+ Inserir da biblioteca”** para começar de um modelo, ou **“+ Cláusula em branco”** para escrever do zero.
+5. **Ordenar cláusulas** — defina a **sequência** em que as cláusulas aparecem no documento final. Aqui as **essenciais e as outras aparecem juntas, numa lista só**, e você as reordena com as setas **↑ ↓**. As cláusulas de **Objeto** e **Apuração** ficam fixas no início.
+6. **Revisão** — pré-visualização fiel ao que o público verá + o botão **Publicar**.
 
 ![Etapa Outras cláusulas, com cartões editáveis](/assets/screenshots/reg-outras-clausulas.png)
 
@@ -65,6 +66,30 @@ São quatro cláusulas, na seção **Apuração** do documento:
 
 Se você tentar publicar um regulamento de campanha Loteria Federal sem a descrição da apuração, o plugin **barra a publicação** e avisa o que falta. Isso existe porque, até a versão 2.22.0, o texto padrão remetia a regras que nunca chegavam a ser descritas no documento — o participante lia uma promessa vazia.
 
+### Personalizar o texto da apuração numa campanha específica
+{: #personalizar-apuracao }
+
+> **Novidade da versão 2.24.0.** Antes, esse texto só podia ser mudado na **biblioteca de cláusulas** — e mexer lá afetava **todas** as campanhas de uma vez. Agora, se uma campanha tiver uma particularidade legítima, você ajusta o texto **só naquela rifa**.
+
+Na etapa **Apuração** do assistente, cada cláusula aparece com o botão **“Personalizar nesta campanha”** ao lado do título.
+
+![Bloco Apuração (Loteria Federal) na aba Regulamento](/assets/screenshots/reg-apuracao-override.png)
+
+**Como funciona a escolha — e por que ela importa:**
+
+- **Sem personalizar (o padrão):** a campanha **herda o texto da biblioteca**. Se a biblioteca for melhorada depois — um ajuste de redação, uma explicação mais clara —, essa campanha **recebe a melhoria automaticamente**. É o comportamento recomendado na maioria dos casos.
+- **Ao clicar em “Personalizar nesta campanha”:** o texto passa a ser **daquela campanha**. Um selo **“personalizado nesta campanha”** aparece ao lado do título, e o botão vira **“Restaurar padrão”**. A partir daí, aquela campanha **deixa de acompanhar** a biblioteca — melhorias futuras não chegam nela.
+
+![Cláusula personalizada, com o selo e o botão Restaurar padrão](/assets/screenshots/reg-apuracao-override-personalizado.png)
+
+Para voltar atrás, clique em **“Restaurar padrão”**: a personalização é descartada e a campanha volta a herdar a biblioteca.
+
+> ⚠️ **A descrição da apuração não pode ser removida**
+>
+> Você pode **ajustar** o texto ou **restaurar o padrão** — mas não deixá-lo em branco. Se você apagar tudo, o plugin entende como um **pedido de restaurar o padrão** e devolve o texto da biblioteca.
+>
+> Isso é uma **proteção, não uma limitação**: um regulamento que não diz como o ganhador é escolhido deixa o participante sem como conferir o resultado, e é exatamente o problema que a versão 2.23.0 veio resolver. Se o texto padrão não serve para a sua campanha, **reescreva-o** — não o esvazie.
+
 ### "Este regulamento está com a apuração desatualizada"
 {: #regulamento-apuracao-desatualizada }
 
@@ -73,6 +98,8 @@ Campanhas cujo regulamento foi publicado **antes** dessa mudança aparecem **sin
 ![Aviso no painel do WordPress listando as campanhas a republicar](/assets/screenshots/admin-aviso-republicar-regulamento.png)
 
 **O que fazer:** o texto publicado é **congelado por versão** e não se corrige sozinho. Abra a campanha, vá na aba **Regulamento** e **republique** — o plugin gera uma nova versão já com as cláusulas completas, e a anterior fica arquivada no histórico.
+
+> **Melhorou na versão 2.24.0.** O aviso agora **some assim que você republica** — antes ele continuava aparecendo mesmo depois de você fazer exatamente o que ele pedia. E ele passou a aparecer **só nas telas do RIT360 Premiado**; antes surgia em todas as páginas do WordPress (Posts, Mídia, Plugins, Usuários…). Se o aviso continuar após republicar, é sinal de que **outra** campanha ainda está pendente — confira os nomes listados nele.
 
 **É urgente?** Não é bloqueante: a campanha continua funcionando normalmente. Mas há uma consequência prática — enquanto o regulamento publicado não declarar o prazo de 5 dias, aquela campanha **não** é finalizada automaticamente pelo sistema (veja [Realizar o sorteio](/guias/realizar-sorteio/#prazo-conferencia)). Se a campanha já vendeu cartões, avalie republicar com calma: o regulamento é o documento que os participantes leram.
 

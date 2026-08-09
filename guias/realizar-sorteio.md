@@ -32,11 +32,11 @@ As três opções são:
 
 Ao escolher **Loteria Federal**, cada cartão passa a ter um **número de sorteio** (a posição dele na lista) exibido para o participante em todos os lugares — na grade de escolha, no carrinho, no e-mail de confirmação, no pedido, no painel "Meus cartões" e no resultado. É esse número que casa com a extração oficial.
 
-> 💡 **E a opção da aba Dados legais?**
+> 💡 **E a aba Dados legais?**
 >
-> Na aba **Dados legais** ainda existe uma caixa **"Apuração oficial pela Loteria Federal"**, de versões anteriores. Ela continua ali por compatibilidade com campanhas antigas, mas **não é mais o lugar de escolher o método** — quem manda é o campo da aba Formulário. Para campanhas novas, deixe a decisão no formulário e não se preocupe com essa caixa.
+> Ela **não escolhe mais o método**. Até a versão 2.23 havia lá uma caixa "Apuração oficial pela Loteria Federal" que dava a entender o contrário; **na 2.24.0 ela foi removida**, para não haver dois lugares dizendo coisas diferentes. O método se define **só na aba Formulário**. Campanhas antigas não perdem nada — o valor antigo continua sendo respeitado nos bastidores.
 >
-> Ao lado dela fica a opção **"Esta campanha depende de autorização de sorteio (SPA/MF)"**. Marcando-a, o plugin **recomenda** o método Loteria Federal — é o que atende ao rito legal dos sorteios autorizados — e disponibiliza uma cláusula de regulamento pronta sobre o assunto. Isto é apoio ao processo: a necessidade da autorização e a conferência do regulamento com um advogado continuam sendo responsabilidade da organização.
+> O que continua na aba Dados legais é o bloco **Autorização de sorteio (SPA/MF)**, com a opção **"Esta campanha depende de autorização de sorteio (SPA/MF)"**. Marcando-a, o plugin **recomenda** o método Loteria Federal — é o que atende ao rito legal dos sorteios autorizados — e disponibiliza uma cláusula de regulamento pronta sobre o assunto. Isto é apoio ao processo: a necessidade da autorização e a conferência do regulamento com um advogado continuam sendo responsabilidade da organização.
 
 ## Onde se apura
 

@@ -15,6 +15,30 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 
 ---
 
+## Versão 2.24 — Ajuste fino do regulamento, avisos que se comportam e transparência em qualquer tema
+
+**Regulamento:**
+
+- **Agora dá para ajustar o texto da apuração em uma campanha específica.** Antes, esse texto só podia ser mudado na biblioteca de cláusulas — e mexer lá afetava **todas** as campanhas de uma vez. Se uma rifa tem uma particularidade legítima, você personaliza só ela.
+- **Quem não personaliza continua acompanhando a biblioteca**, inclusive quando ela é melhorada. Quem personaliza passa a ter texto próprio e deixa de receber essas melhorias — há um botão **Restaurar padrão** para voltar atrás quando quiser.
+- **A descrição da apuração não pode ser apagada:** esvaziar o texto equivale a restaurar o padrão. É proteção, não limitação — nenhum regulamento deve ir ao ar sem dizer como o contemplado é escolhido. Veja [Personalizar o texto da apuração](/guias/publicar-regulamento/#personalizar-apuracao).
+
+**O aviso de regulamento desatualizado ficou bem-educado:**
+
+- **Ele some quando você republica.** Antes, o coordenador fazia exatamente o que o aviso pedia e ele continuava lá para sempre — o que ensina a ignorar avisos.
+- **Ele só aparece nas telas do RIT360 Premiado.** Antes surgia em todo o WordPress: Posts, Mídia, Plugins, Usuários…
+
+**Página pública:**
+
+- **A seção Transparência funciona nos 6 temas.** Antes ela não era sequer oferecida em **Moderno (o padrão)**, Divertido e Simples: você marcava os indicadores, recebia confirmação, e o painel nunca aparecia. **Nesses três temas a seção nasce desligada** (para nenhuma campanha existente mudar de cara sozinha) — basta ligá-la em *Aparência da página*. E o admin agora **avisa** quando há indicadores marcados com a seção desligada. Veja [Painel de transparência](/guias/personalizar-pagina-publica/#painel-transparencia).
+
+**Dois campos que saíram das telas:**
+
+- A aba **Dados legais** não tem mais a caixa **"Apuração oficial pela Loteria Federal"**. Ela dava a entender que decidia o método de apuração, contradizendo a unificação feita na 2.22 — o método se define **só na aba Formulário**. Campanhas antigas não perdem nada.
+- As **Configurações → Apuração** não têm mais a **"Regra de não-bate"**, que não tinha efeito nenhum desde a 2.21 (a apuração pela Loteria Federal sempre encontra um cartão).
+
+---
+
 ## Versão 2.23 — O sorteio explicado por inteiro, e os campos que agora fazem o que prometem
 
 A versão dedicada a uma pergunta simples: **o participante consegue conferir o resultado sozinho?**
@@ -35,7 +59,7 @@ A versão dedicada a uma pergunta simples: **o participante consegue conferir o 
 
 - **Organização:** o **favicon** vira o ícone da aba do navegador na página da campanha; o **texto institucional curto** e o **contato de dúvidas** aparecem na página pública. Veja [Configurar a organização](/guias/configurar-organizacao/).
 - **Templates de cartão:** ganharam **quantidade recomendada**, **dica de uso** e **status Ativo/Inativo** — um template inativo deixa de ser oferecido ao criar campanha. Veja [Templates & Cartões](/modulos/templates-cartoes/).
-- **Painel de transparência:** dois indicadores novos, **Participantes** e **Resultado do sorteio**. ⚠️ Atenção: o painel de transparência **só aparece nos temas Clássico, Emotivo e Sofisticado** — nos temas Moderno (o padrão), Divertido e Simples ele não é exibido, mesmo com os indicadores marcados. Detalhes em [Personalizar a página pública](/guias/personalizar-pagina-publica/#painel-transparencia).
+- **Painel de transparência:** dois indicadores novos, **Participantes** e **Resultado do sorteio**. *(Nesta versão o painel ainda só aparecia em 3 dos 6 temas — corrigido na 2.24, veja acima.)*
 
 **Correção de cartões:**
 
@@ -231,7 +255,7 @@ O passo a passo está em [Enviar feedback](/guias/enviar-feedback/).
 Agora dá para apurar pela **Loteria Federal** também as campanhas de **lista temática** (cartões que são nomes, não números).
 
 - Cada cartão ganha um **número de sorteio** (a posição na lista, ex.: *Duna · 07*), que casa com o resultado oficial da Loteria Federal.
-- Você liga isso na aba **Dados legais** da campanha, em **"Apuração oficial pela Loteria Federal"**. A partir daí o número aparece em todos os lugares onde o cartão é mostrado (grade de escolha, carrinho, e-mail, pedido, "Meus cartões" e resultado) — o participante sabe com que número concorre.
+- Você ligava isso na aba **Dados legais** da campanha, em "Apuração oficial pela Loteria Federal". *(Mudou depois: desde a 2.22 o método se define na aba **Formulário**, e na 2.24 essa caixa foi removida.)* A partir daí o número aparece em todos os lugares onde o cartão é mostrado (grade de escolha, carrinho, e-mail, pedido, "Meus cartões" e resultado) — o participante sabe com que número concorre.
 - Há também um sinalizador **"depende de autorização (SPA/MF)"**, que recomenda a Loteria e oferece uma **cláusula de regulamento** pronta.
 
 Veja em [Realizar o sorteio](/guias/realizar-sorteio/).

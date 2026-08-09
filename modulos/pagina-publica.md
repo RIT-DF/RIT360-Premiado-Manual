@@ -20,7 +20,7 @@ Cada campanha tem um **hotsite próprio**, mobile-first, no endereço `/campanha
 
 - O(s) **prêmio(s)** com galeria de fotos — quando a campanha tem vários prêmios, todos aparecem em ordem (1º, 2º, 3º…).
 - A **história da causa** (texto rico).
-- O **progresso das vendas** e o **painel de transparência** (indicadores que você escolhe — incluindo **Participantes** e **Resultado do sorteio**, a partir da 2.23.0). ⚠️ O painel só é exibido nos temas **Clássico, Emotivo e Sofisticado**; veja [Painel de transparência](/guias/personalizar-pagina-publica/#painel-transparencia).
+- O **progresso das vendas** e o **painel de transparência** (indicadores que você escolhe — incluindo **Participantes** e **Resultado do sorteio**, a partir da 2.23.0). A partir da **2.24.0** o painel funciona **nos 6 temas**; nos temas Moderno, Divertido e Simples ele nasce **desligado** e precisa ser ligado nas seções. Veja [Painel de transparência](/guias/personalizar-pagina-publica/#painel-transparencia).
 - A **seleção de cartões** (manual ou automática).
 - O **regulamento**.
 - A **barra de compartilhamento** (WhatsApp, Facebook, X, LinkedIn, copiar link).

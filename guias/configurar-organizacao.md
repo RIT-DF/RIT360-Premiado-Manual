@@ -44,7 +44,6 @@ A tela de Configurações também guarda ajustes que você vai usar depois:
 
 - **Banco de Cláusulas de Regulamento** — a biblioteca de cláusulas prontas que alimenta o regulamento das campanhas.
 - **Apuração** — os padrões globais de sorteio (política do contemplado reembolsado, exposição pública do ganhador) e a opção de **buscar automaticamente o resultado da Loteria Federal**. Veja [Realizar o sorteio](/guias/realizar-sorteio/#busca-automatica).
-  - O campo **"Regra de não-bate (método externo)"** que aparece nesta aba é de versões anteriores: desde a 2.21.0 a apuração pela Loteria Federal **sempre encontra um cartão**, então não há mais regra de aproximação a aplicar. Pode ignorá-lo.
 - **PDF / Relatórios** — o motor de geração de PDF dos documentos.
 
 > 💡 **Dica**

@@ -18,7 +18,7 @@ O regulamento é o documento que define as regras da campanha — e é **obrigat
 
 ## Semi-automático, em etapas
 
-O assistente tem quatro etapas: **Dados da campanha** (automáticos), **Cláusulas essenciais**, **Outras cláusulas** e **Revisão**. O texto combina:
+O assistente tem as etapas: **Dados da campanha** (automáticos), **Apuração** (só em campanhas de Loteria Federal), **Cláusulas essenciais**, **Outras cláusulas**, **Ordenar cláusulas** e **Revisão**. O texto combina:
 
 1. **Dados automáticos** da organização e da campanha (nome, CNPJ, prêmio, datas, quantidade, valor).
 2. **Campos essenciais** que você preenche — com **“Inserir da biblioteca”** para trazer um texto-modelo pronto e editá-lo.
@@ -30,7 +30,17 @@ Ao inserir uma cláusula da biblioteca, o texto é **copiado e congelado** na ca
 
 Em campanhas cujo método é **Loteria Federal**, as cláusulas que descrevem a apuração entram **automaticamente** no documento — a regra com exemplo numérico, o concurso oficial utilizado, o tratamento de vários prêmios e o **prazo de 5 dias corridos** para conferência. E a publicação é **barrada** se a descrição da apuração não estiver lá.
 
-Campanhas com regulamento publicado antes dessa mudança ficam **sinalizadas por um aviso no painel do WordPress**, sugerindo republicar. Como o texto é congelado por versão, ele não se atualiza sozinho: republicar gera uma nova versão. O passo a passo está em [Publicar o regulamento](/guias/publicar-regulamento/#regulamento-apuracao-desatualizada).
+Campanhas com regulamento publicado antes dessa mudança ficam **sinalizadas por um aviso**, sugerindo republicar. Como o texto é congelado por versão, ele não se atualiza sozinho: republicar gera uma nova versão. Desde a **2.24.0**, o aviso **desaparece assim que a campanha é republicada** e aparece **apenas nas telas do plugin**. O passo a passo está em [Publicar o regulamento](/guias/publicar-regulamento/#regulamento-apuracao-desatualizada).
+
+## Apuração ajustável por campanha (2.24.0)
+
+As cláusulas de apuração das campanhas de Loteria Federal ficam numa etapa própria do assistente e podem ser **personalizadas em uma campanha específica**, sem mexer na biblioteca.
+
+- **Sem personalizar**, a campanha herda a biblioteca e **acompanha as melhorias** feitas nela.
+- **Personalizando**, aquela campanha passa a ter texto próprio e **deixa de acompanhar** a biblioteca. Um botão **Restaurar padrão** desfaz a personalização.
+- A cláusula **não pode ser removida**: esvaziar o texto equivale a restaurar o padrão — proteção para que nenhum regulamento seja publicado sem dizer como o contemplado é escolhido.
+
+Detalhes em [Personalizar o texto da apuração](/guias/publicar-regulamento/#personalizar-apuracao).
 
 ## Versionado e carimbado
 
