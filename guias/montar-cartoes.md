@@ -8,7 +8,7 @@ role: admin
 routes: ["#/templates", "#/campanhas/:id"]
 screenshots: [bp-07-templates, bp-06-campanha-cartoes]
 source_docs: [PRD_Bussola_Premiada.md#8.4, PRD_Bussola_Premiada.md#8.5]
-last_verified: 2026-07-05
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -35,7 +35,9 @@ Você as encontra na seção **Templates**.
 
 1. Abra a aba **Templates** na barra de abas do plugin.
 2. Crie um novo template do tipo **Lista** e informe os nomes — ou **importe um CSV** (o plugin remove duplicados e espaços em excesso automaticamente).
-3. Salve. A lista fica disponível para qualquer campanha.
+3. Preencha, se quiser, a **quantidade recomendada** de cartões e uma **dica de uso** (ex.: *"ideal para rifas de até R$ 5.000"*). São opcionais e servem para orientar quem for montar a próxima campanha.
+4. Deixe o **status** em **Ativo**. Templates marcados como **Inativo** não aparecem para escolha ao criar ou editar campanha — é o jeito de aposentar uma lista sem apagá-la.
+5. Salve. A lista fica disponível para qualquer campanha.
 
 > 💡 **Exemplo**
 >

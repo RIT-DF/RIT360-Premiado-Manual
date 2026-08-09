@@ -6,9 +6,9 @@ permalink: /guias/personalizar-pagina-publica/
 task: personalizar-pagina-publica
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
-screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video]
+screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video, publica-transparencia, publica-vendas-encerradas]
 source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0, CHANGELOG.md#2.13.0, CHANGELOG.md#2.13.2]
-last_verified: 2026-07-23
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -101,12 +101,37 @@ O **hero** é a primeira faixa da página — o "cartaz" da campanha. No card **
 
 ## O que mais dá para ajustar nesta aba
 
-- **Painel de transparência** — escolha quais indicadores mostrar (total arrecadado, cartões vendidos, cartões restantes…). O financeiro fica **oculto por padrão** — ative só o que quiser expor.
+- **Painel de transparência** — escolha quais indicadores mostrar (total arrecadado, cartões vendidos, cartões restantes…). O financeiro fica **oculto por padrão** — ative só o que quiser expor. Veja abaixo, porque **o painel não aparece em todos os temas**.
 - **Meta da campanha (termômetro)** — defina uma meta de **cartões** e/ou de **arrecadação (R$)** e a página mostra um termômetro com o progresso e um aviso quando a meta é atingida (veja abaixo).
 - **Vídeo de divulgação** — cole um link do **YouTube** ou do **Vimeo** e o vídeo aparece embutido na página (veja abaixo).
 - **Compartilhamento / Open Graph** — os botões de redes sociais e o card que aparece quando o link é compartilhado.
 
 ![Configuração da meta e do vídeo na aba Página pública](/assets/screenshots/bp-29-config-meta-video.png)
+
+### Painel de transparência
+{: #painel-transparencia }
+
+O painel reúne, num quadro só, os números que dão credibilidade à campanha: quantidade de cartões, vendidos, data do sorteio, situação e — a partir da versão **2.23.0** — mais dois indicadores:
+
+- **Participantes** — quantas pessoas diferentes compraram cartões. Mostra que a rifa tem gente de verdade, não só números.
+- **Resultado do sorteio** — depois de apurado, o cartão contemplado; antes disso, *"Ainda não sorteado"*.
+
+![Painel de transparência na página pública, com Participantes e Resultado](/assets/screenshots/publica-transparencia.png)
+
+> ⚠️ **O painel de transparência não aparece em todos os temas**
+>
+> Verificado na tela, com os mesmos indicadores marcados, tema a tema:
+>
+> | Tema | Mostra o painel? |
+> |---|---|
+> | Clássico | Sim |
+> | Emotivo | Sim |
+> | Sofisticado | Sim |
+> | **Moderno (o padrão)** | **Não** |
+> | Divertido | Não |
+> | Simples | Não |
+>
+> Ou seja: você pode marcar os indicadores, salvar sem erro nenhum, e **o público não ver o painel** — porque o tema escolhido não tem esse espaço. **Se o painel de transparência é importante para a sua campanha, use Clássico, Emotivo ou Sofisticado.** Isso já está registrado como um ajuste a fazer no produto; enquanto não sai, a escolha do tema é o que decide.
 
 ### Termômetro de meta
 

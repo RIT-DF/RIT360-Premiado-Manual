@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas", "#/campanhas/nova"]
 screenshots: [bp-02-campanhas-lista, bp-03-campanha-nova-dados, bp-04-campanha-premio, campanha-premio-midia-multipla, bp-05-campanha-config]
 source_docs: [PRD_Bussola_Premiada.md#8.2, PRD_Bussola_Premiada.md#8.3, "#137"]
-last_verified: 2026-07-22
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -64,10 +64,12 @@ Aqui ficam os números e as regras:
 - **Valor unitário do cartão** e **quantidade de cartões** (obrigatórios).
 - **Datas** de início/fim das vendas e do **sorteio**.
 - **Tempo de reserva do cartão** (em minutos) — quanto tempo um cartão fica "segurado" no carrinho antes de voltar ao pool se a compra não for concluída.
-- **Método de apuração** (interno, Loteria Federal ou manual).
+- **Método de apuração** — **Loteria Federal**, **Apuração interna auditável** ou **Registro manual**.
 - **Descontos por quantidade** (opcional).
 
 ![Etapa Configurações da Campanha](/assets/screenshots/bp-05-campanha-config.png)
+
+> **O método de apuração fica só aqui (versão 2.22.0).** Este é o **único** lugar onde o método é definido. Ele governa o sorteio (aba Apuração), o texto do regulamento e a exibição do **número de sorteio** do cartão para o comprador — e é **obrigatório para publicar** a campanha. Antes havia um segundo seletor na aba Apuração, que podia discordar deste; ele deixou de existir. Detalhes em [Realizar o sorteio](/guias/realizar-sorteio/).
 
 ## Salvar e completar
 

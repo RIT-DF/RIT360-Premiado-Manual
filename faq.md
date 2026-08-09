@@ -2,7 +2,7 @@
 title: "Dúvidas frequentes"
 nav_order: 7
 permalink: /faq/
-last_verified: 2026-08-04
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -31,7 +31,19 @@ Não. O plugin **apoia** a conformidade (regulamento obrigatório, apuração au
 Depende da modalidade e do valor. Sorteios no Brasil são regulados (Lei 5.768/1971, Decreto 70.951/1972) e alguns exigem autorização prévia do Ministério da Fazenda. Consulte um profissional para o seu caso.
 
 ### Como o sorteio é confiável?
-Você escolhe: sorteio pela **Loteria Federal**, método **interno reproduzível** (qualquer auditor confere o resultado) ou **manual** com registro. Antes de sortear, a base de cartões é **congelada** e fica imutável. Veja [Apuração](/modulos/apuracao/).
+Você escolhe: sorteio pela **Loteria Federal**, **apuração interna auditável** (qualquer pessoa refaz a conta e confere o resultado) ou **registro manual**. Antes de sortear, a base de cartões é **congelada** e fica imutável. Veja [Apuração](/modulos/apuracao/).
+
+### Onde escolho o método de apuração?
+Na aba **Formulário** da campanha (etapa *Configurações da Campanha*), no campo **Método de apuração** — e **só ali**. A aba Apuração apenas mostra o que foi escolhido. Antes da versão 2.22 havia dois seletores, que podiam discordar entre si.
+
+### Como funciona a apuração pela Loteria Federal?
+Os cartões vendidos entram em ordem (são **N**); os **5 números** da extração oficial são colados um no outro, na ordem em que saíram, formando um número **V**; o **resto da divisão de V por N** aponta o cartão contemplado. Numa planilha: `=MOD(V;N)+1`. Como o resto sempre cai dentro da lista, o resultado sempre resolve — não existe "regra de aproximação". O **regulamento traz essa explicação com um exemplo numérico**.
+
+### O sistema pode finalizar o sorteio sozinho?
+Sim, mas com uma condição. Havendo resultado apurado, a organização tem **5 dias corridos** para conferir e finalizar; passado o prazo, o sistema finaliza sozinho. Isso **só vale se o regulamento publicado daquela campanha declarar o prazo** — o regulamento é congelado por versão, e ninguém pode ser submetido a uma regra que não estava no documento que leu. Campanhas antigas continuam esperando você, a menos que o regulamento seja republicado.
+
+### Apareceu um aviso dizendo que o regulamento está com a apuração desatualizada. E agora?
+É um lembrete, não um bloqueio: a campanha continua funcionando. Ele aparece quando o regulamento foi publicado **antes** das novas cláusulas de apuração. Para resolver, abra a campanha, vá na aba **Regulamento** e **republique** — isso gera uma nova versão com o texto completo. Veja [Publicar o regulamento](/guias/publicar-regulamento/#regulamento-apuracao-desatualizada).
 
 ### E a proteção de dados (LGPD)?
 Os dados pessoais são tratados com privacy-by-design: relatórios saem **mascarados** por padrão, o documento do ganhador é sempre privado, o consentimento para e-mails promocionais é explícito e há trilha de auditoria. Veja a [Política de Privacidade](/legal/privacidade/).
@@ -85,7 +97,10 @@ Sim, com **shortcodes** como `[rit360_premiado_rifa id="123"]`. Veja [Página p�
 ## E-mails
 
 ### Quais e-mails o plugin envia?
-Confirmação de compra, aviso de nova venda, esgotado, lançamento, lembrete de sorteio, mudança de data, resultado e ganhador. Veja [Configurar os e-mails](/guias/configurar-emails/).
+Confirmação de compra, aviso de nova venda, esgotado, lançamento, lembrete de sorteio, **vendas encerradas** (aos coordenadores), mudança de data, resultado e ganhador. Veja [Configurar os e-mails](/guias/configurar-emails/).
+
+### A campanha encerrou as vendas e ninguém percebeu. Dá para ser avisado?
+Sim — é automático. Quando o período de vendas termina, **todos os coordenadores** da campanha recebem o e-mail **"Vendas encerradas"**, com o resumo do que foi vendido, a data prevista do sorteio e o que fazer em seguida conforme o método de apuração. A página pública também passa a exibir o aviso de vendas encerradas com a data do sorteio.
 
 ### Um comprador não quer mais receber e-mails promocionais. Como funciona?
 E-mails promocionais só vão para quem **consentiu**, e cada um traz um link de **descadastro de um clique**. E-mails transacionais (confirmação de compra) sempre são enviados.

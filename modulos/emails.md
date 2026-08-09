@@ -6,7 +6,7 @@ permalink: /modulos/emails/
 role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-14-emails-logs]
-last_verified: 2026-08-01
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -27,7 +27,9 @@ O módulo de e-mails cuida de toda a comunicação automática da campanha, com 
 
 ## E-mails disponíveis
 
-Confirmação de compra · Nova venda (admin) · Estoque esgotado · Lançamento da campanha · Lembrete de sorteio · Mudança de data · Resultado do sorteio · Ganhador.
+Confirmação de compra · Nova venda (admin) · Estoque esgotado · Lançamento da campanha · Lembrete de sorteio · **Vendas encerradas (coordenadores)** · Mudança de data · Resultado do sorteio · Ganhador.
+
+O **Vendas encerradas** (novo na 2.20.0) sai quando o período de vendas termina, para **todos os coordenadores** da campanha: traz o resumo das vendas, a data prevista do sorteio e as **próximas ações conforme o método de apuração** escolhido.
 
 ## Transacional vs. promocional
 

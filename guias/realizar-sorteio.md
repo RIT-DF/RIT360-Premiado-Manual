@@ -5,10 +5,10 @@ parent: "Guias por tarefa"
 permalink: /guias/realizar-sorteio/
 task: realizar-sorteio
 role: admin
-routes: ["#/campanhas/:id"]
-screenshots: [bp-21-apuracao]
-source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15]
-last_verified: 2026-07-23
+routes: ["#/campanhas/:id", "#/organizacao"]
+screenshots: [bp-05-campanha-config, bp-21-apuracao, apuracao-loteria-busca, apuracao-aviso-divergencia, bp-19-config-apuracao]
+source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15, "#186", "#182", "#185"]
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -16,11 +16,35 @@ status: publicado
 
 Chegou a data. O RIT360 Premiado faz a apuração de forma **auditável** — de um jeito que qualquer pessoa possa confiar no resultado. Você escolhe entre três métodos.
 
-## Onde fica
+## Antes de tudo: onde o método é definido
+
+> **Mudou na versão 2.22.0.** O método de apuração agora é definido em **um lugar só**: a aba **Formulário** da campanha (etapa *Configurações da Campanha*), no campo **Método de apuração**. Antes existiam dois seletores — um no formulário e outro na aba Apuração — e eles podiam discordar entre si.
+
+O que você escolhe ali governa **tudo**: como o sorteio é feito, o que o regulamento diz sobre a apuração e se o comprador vê o **número de sorteio** do cartão. O campo é **obrigatório para publicar** a campanha.
+
+![Campo Método de apuração na aba Formulário](/assets/screenshots/bp-05-campanha-config.png)
+
+As três opções são:
+
+- **Loteria Federal** — o resultado é definido pela extração oficial da Loteria Federal. É o método mais reconhecido pelo público e o que atende ao rito legal dos sorteios autorizados.
+- **Apuração interna auditável** — o plugin sorteia usando uma semente secreta lacrada no congelamento. Ao finalizar, a semente é revelada e **qualquer pessoa pode refazer a conta** e chegar ao mesmo cartão. Autonomia total, sem depender de terceiros.
+- **Registro manual** — para sorteios feitos fora do sistema (uma live, um evento). Você registra o resultado com **justificativa e anexos**.
+
+Ao escolher **Loteria Federal**, cada cartão passa a ter um **número de sorteio** (a posição dele na lista) exibido para o participante em todos os lugares — na grade de escolha, no carrinho, no e-mail de confirmação, no pedido, no painel "Meus cartões" e no resultado. É esse número que casa com a extração oficial.
+
+> 💡 **E a opção da aba Dados legais?**
+>
+> Na aba **Dados legais** ainda existe uma caixa **"Apuração oficial pela Loteria Federal"**, de versões anteriores. Ela continua ali por compatibilidade com campanhas antigas, mas **não é mais o lugar de escolher o método** — quem manda é o campo da aba Formulário. Para campanhas novas, deixe a decisão no formulário e não se preocupe com essa caixa.
+>
+> Ao lado dela fica a opção **"Esta campanha depende de autorização de sorteio (SPA/MF)"**. Marcando-a, o plugin **recomenda** o método Loteria Federal — é o que atende ao rito legal dos sorteios autorizados — e disponibiliza uma cláusula de regulamento pronta sobre o assunto. Isto é apoio ao processo: a necessidade da autorização e a conferência do regulamento com um advogado continuam sendo responsabilidade da organização.
+
+## Onde se apura
 
 Abra a campanha e clique na aba de topo **Apuração**.
 
 ![Aba Apuração](/assets/screenshots/bp-21-apuracao.png)
+
+No topo dessa aba há um campo **Método** que apenas **mostra** o que foi escolhido, com o lembrete de que a alteração se faz na aba Formulário. Não há mais seletor aqui — se o método estiver errado, volte ao formulário e corrija lá.
 
 ## Passo 1 — Congelar a base
 
@@ -28,26 +52,33 @@ Antes de sortear, você **congela** a lista de cartões vendidos. A partir daí:
 
 - A base não muda mais — ninguém entra ou sai.
 - Reembolsos e cancelamentos **não** devolvem mais o cartão ao pool (ficam registrados e auditados).
-- No método interno, é publicado um **lacre** (um código `sha256` da semente do sorteio), provando que a semente foi definida **antes** do resultado.
+- Na apuração interna, é publicado um **lacre** (um código `sha256` da semente do sorteio), provando que a semente foi definida **antes** do resultado.
 
-## Passo 2 — Escolher o método
+## Passo 2 — Obter o resultado
 
-- **Interno (reproduzível)** — o plugin sorteia usando uma semente secreta lacrada no congelamento. Ao finalizar, a semente é revelada e **qualquer auditor pode refazer a conta** e chegar ao mesmo cartão. Transparência total, sem depender de terceiros.
-- **Loteria Federal** — o resultado é definido pela extração da Loteria Federal. Você informa o concurso; o plugin extrai os últimos dígitos do número premiado e aplica a **regra de não-bate** que você definiu (caso o número não corresponda a um cartão vendido). O plugin pode buscar a extração automaticamente, mas **você confirma** — ele nunca decide sozinho.
-- **Manual** — para sorteios feitos fora do sistema (uma live, um evento). Você registra o resultado com **justificativa e anexos**.
+### Se o método for Loteria Federal
 
-## Loteria Federal em qualquer campanha (novo, 1.13.0)
+A regra é simples de conferir e não deixa margem para interpretação:
 
-Antes, a apuração pela Loteria Federal só funcionava com cartões **numerados**. Agora ela vale também para as **listas temáticas** (aquelas em que cada cartão é um nome — filmes, livros, jogadores…): cada cartão passa a ter, além do nome, um **número de sorteio** (a sua posição na lista, ex.: *Duna · 07*). É esse número que casa com o resultado da Loteria Federal.
+1. Os cartões **vendidos** são colocados em ordem — são **N** cartões.
+2. Os **5 números** sorteados na extração oficial são **colados um no outro, na ordem em que saíram**, formando um número grande (**V**).
+3. O **resto da divisão de V por N** aponta a posição do cartão contemplado na lista.
 
-Para usar, abra a campanha, vá na aba **Dados legais** e ligue **"Apuração oficial pela Loteria Federal"**. Ao ligar:
+Quem quiser conferir em casa consegue: numa planilha, a conta é `=MOD(V;N)+1`. Como o resto da divisão sempre cai dentro da lista, **o resultado sempre resolve** — não existe mais "regra de aproximação" nem configuração de dígitos a extrair. (Em campanhas com **vários prêmios**, o processo se repete: o cartão já contemplado sai da base e a sequência dos números avança uma posição.)
 
-- cada cartão passa a **mostrar o número de sorteio** em todos os lugares onde aparece — na **grade de escolha dos cartões**, no **carrinho**, no **e-mail de confirmação**, no **pedido**, no painel **"Meus cartões"** e no **resultado do sorteio** — para o participante saber, do início ao fim, com que número está concorrendo;
-- a apuração passa a usar a **Loteria Federal** (o sorteio interno fica desligado nessa campanha).
+Na aba Apuração, depois de congelar a base, aparecem cinco campos — **1º a 5º prêmio** — na ordem do sorteio. Clique em **Buscar resultado** para o sistema trazer a extração oficial e preencher os cinco, ou digite os números à mão a partir do resultado publicado pela Caixa. Depois é só **Sortear**. Duas coisas que o sistema faz por você:
 
-Há também, ao lado, a opção **"Esta campanha depende de autorização de sorteio (SPA/MF)"**: quando marcada, o sistema **recomenda** ligar a apuração pela Loteria (é o método que atende ao rito legal de sorteios autorizados) e disponibiliza uma **cláusula de regulamento** pronta sobre a base na Loteria Federal.
+- **Se o concurso trazido não for o esperado para esta campanha**, aparece um **aviso de divergência** antes de qualquer sorteio, comparando o concurso que veio com o que era previsto. Confira antes de prosseguir — a regra vale sobre o número, e o número muda com o concurso.
 
-> Isto é apoio ao processo. A necessidade de autorização e a conferência do regulamento com um advogado continuam sendo responsabilidade da organização.
+  ![Aviso de concurso divergente na aba Apuração](/assets/screenshots/apuracao-aviso-divergencia.png)
+
+- **Se a consulta à Caixa falhar**, aparece uma **mensagem de erro** pedindo que você digite os números manualmente. (Até a versão 2.22.0 a tela dizia que o resultado tinha sido buscado mesmo quando nada tinha vindo — esse é justamente o defeito corrigido.)
+
+![Campos dos 5 prêmios e o botão Buscar resultado, na aba Apuração](/assets/screenshots/apuracao-loteria-busca.png)
+
+### Se o método for interno ou manual
+
+No **interno**, o próprio plugin sorteia sobre a base congelada. No **manual**, você informa o cartão contemplado (um por prêmio, se houver vários) com justificativa e anexos.
 
 ## Passo 3 — Finalizar e publicar
 
@@ -58,7 +89,27 @@ Ao finalizar, o resultado é **travado** (imutável). O(s) contemplado(s) é(sã
 
 ### Campanha com vários prêmios
 
-Se a campanha tem **mais de um prêmio**, a apuração sorteia **todos de uma vez**, sobre a mesma base congelada, **sem repetir cartão** — o 1º, o 2º, o 3º… saem em sequência. A aba Apuração mostra a lista dos contemplados por prêmio, e cada ganhador recebe seu e-mail. Nos métodos **interno** e **Loteria Federal** o plugin resolve os N contemplados automaticamente; no método **manual**, você informa um cartão para cada prêmio.
+Se a campanha tem **mais de um prêmio**, a apuração sorteia **todos de uma vez**, sobre a mesma base congelada, **sem repetir cartão** — o 1º, o 2º, o 3º… saem em sequência. A aba Apuração mostra a lista dos contemplados por prêmio, e cada ganhador recebe seu e-mail. Nos métodos **interno** e **Loteria Federal** o plugin resolve os N contemplados automaticamente; no **manual**, você informa um cartão para cada prêmio.
+
+## O prazo de 5 dias para conferir
+{: #prazo-conferencia }
+
+> **Novidade da versão 2.23.0.** Assim que existe um resultado apurado da Loteria Federal, você tem **5 dias corridos** para conferir e finalizar. Se ninguém agir nesse prazo, **o sistema finaliza sozinho** — a aba Apuração mostra a data e a hora limite.
+
+Isso evita que uma campanha fique parada indefinidamente esperando alguém clicar. Mas há uma condição importante, e ela é deliberada:
+
+> ⚠️ **A validação automática só vale se o regulamento publicado daquela campanha declarar esse prazo.**
+>
+> O regulamento é um texto **congelado por versão**: o participante leu o que estava publicado quando comprou. Uma campanha cujo regulamento foi publicado **antes** da cláusula do prazo **não** é finalizada automaticamente — ela continua esperando você. Se quiser a automação nessas campanhas, é preciso **republicar o regulamento** (aba Regulamento), o que gera uma nova versão com a cláusula. Se preferir conferir tudo à mão, não faça nada: o comportamento antigo continua.
+
+## Busca automática do resultado
+{: #busca-automatica }
+
+Nas **Configurações → Apuração** existe a opção **"Buscar automaticamente o resultado da Loteria Federal"**. Com ela ligada, o sistema tenta trazer o resultado sozinho assim que a campanha estiver pronta para apurar, sem você precisar clicar em *Buscar resultado* — ele **pré-preenche**, e quem confirma continua sendo você.
+
+![Configurações → Apuração](/assets/screenshots/bp-19-config-apuracao.png)
+
+> Até a versão 2.22.0 essa opção existia na tela mas **não fazia nada**. A partir da 2.23.0 ela funciona de verdade. Em qualquer caso — busca manual ou automática — vale o prazo de 5 dias descrito acima.
 
 > ⚠️ **Atenção**
 >
@@ -66,4 +117,4 @@ Se a campanha tem **mais de um prêmio**, a apuração sorteia **todos de uma ve
 
 > ✅ **Boas práticas**
 >
-> Se a sua modalidade permite, o sorteio pela **Loteria Federal** é o método mais reconhecido e transparente para o público. O método **interno reproduzível** é uma excelente alternativa quando você quer autonomia mantendo a auditabilidade. Descreva no [regulamento](/guias/publicar-regulamento/) qual método será usado, **antes** de abrir a campanha.
+> Se a sua modalidade permite, o sorteio pela **Loteria Federal** é o método mais reconhecido e transparente para o público. A **apuração interna auditável** é uma excelente alternativa quando você quer autonomia mantendo a prova. Em qualquer caso, escolha o método **antes** de abrir a campanha e confira que o [regulamento](/guias/publicar-regulamento/) descreve exatamente o que será feito.

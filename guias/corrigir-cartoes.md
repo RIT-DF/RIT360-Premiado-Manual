@@ -95,7 +95,9 @@ Antes de corrigir qualquer coisa, olhe o estado real do cartão. Busque, clique 
 
 Se o cartão preso estiver ligado a um **pedido já pago**, o plugin não libera de primeira. Aparece um **alerta** explicando a consequência — o comprador ficaria sem o cartão que pagou — e uma caixa **"Confirmo que quero liberar mesmo assim"**, que você precisa marcar antes de o botão habilitar. A operação fica registrada como **exceção**.
 
-Antes de confirmar, pense duas vezes: quase sempre o certo é falar com o comprador, e não liberar o cartão dele.
+> **Melhoria da versão 2.23.0.** O alerta agora diz **qual pedido** e **qual comprador** estão em risco: aparecem o **número do pedido** e o **e-mail** de quem pagou, ali mesmo na confirmação. Antes o texto era genérico, e essa informação passava rápido demais num aviso temporário — na prática, você confirmava sem saber quem seria prejudicado.
+
+Antes de confirmar, pense duas vezes: quase sempre o certo é **falar com o comprador** (o e-mail está bem ali), e não liberar o cartão dele.
 
 > ⚠️ **Depois do sorteio apurado, cartão vendido não volta para a venda**
 >

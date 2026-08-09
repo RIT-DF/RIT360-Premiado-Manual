@@ -8,7 +8,7 @@ role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-13-emails-config, bp-14-emails-logs]
 source_docs: [PRD_Bussola_Premiada.md#8.18, PRD_Bussola_Premiada.md#8.19]
-last_verified: 2026-08-01
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -29,6 +29,7 @@ O plugin já traz modelos prontos para os momentos-chave:
 - **Estoque esgotado** — avisa quando todos os cartões foram vendidos.
 - **Lançamento da campanha** — comunicação promocional na abertura.
 - **Lembrete de sorteio** — avisa os participantes que a data se aproxima (envio automático diário).
+- **Vendas encerradas** (novo na 2.20.0) — assim que o período de vendas termina, **todos os coordenadores da campanha** recebem um aviso com o resumo do que foi vendido (quantidade, percentual e valor arrecadado), a data prevista do sorteio e um **passo a passo do que fazer agora, escrito conforme o método de apuração daquela campanha**. É o e-mail que evita a campanha encerrar e ninguém perceber.
 - **Mudança de data** — avisa todos os compradores se o sorteio for remarcado.
 - **Resultado do sorteio** e **Ganhador** — fecham o ciclo após a apuração.
 

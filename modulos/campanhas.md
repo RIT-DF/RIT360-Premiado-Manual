@@ -63,6 +63,8 @@ Cada campanha percorre uma **máquina de estados** que protege a integridade da 
 
 O sistema só permite as transições válidas e mantém uma **trilha de auditoria** de tudo.
 
+> **O fim das vendas vale de verdade (2.20.0).** Chegada a data de fim das vendas, a campanha **para de vender na hora**: a página pública passa a exibir um aviso com a data prevista do sorteio, e novas reservas e compras são recusadas. Quem já tinha reservado dentro do prazo consegue concluir dentro do tempo de reserva. No mesmo momento, **todos os coordenadores recebem o e-mail "Vendas encerradas"** com o resumo e os próximos passos.
+
 ## Duplicar campanha
 
 Campanhas recorrentes? **Duplique** uma existente — inclusive o regulamento é copiado. Você ajusta só o que muda e ganha tempo.

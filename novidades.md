@@ -3,7 +3,7 @@ title: "Novidades"
 nav_order: 8
 permalink: /novidades/
 source_docs: [CHANGELOG.md]
-last_verified: 2026-08-04
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -12,6 +12,72 @@ status: publicado
 O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no topo do painel, ao lado da logo (ex.: *RIT360 Premiado · v1.2.1*).
 
 > Esta é uma versão amigável do histórico técnico. O registro completo para desenvolvedores fica no `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.23 — O sorteio explicado por inteiro, e os campos que agora fazem o que prometem
+
+A versão dedicada a uma pergunta simples: **o participante consegue conferir o resultado sozinho?**
+
+**Regulamento (o mais importante):**
+
+- Em campanhas de **Loteria Federal**, as cláusulas que descrevem a apuração passam a entrar **automaticamente** no regulamento: a regra explicada com um **exemplo numérico**, qual **concurso oficial** vale, como funciona com vários prêmios e o **prazo de conferência**. E **não dá mais para publicar sem elas**.
+- Campanhas que publicaram o regulamento **antes** disso aparecem **sinalizadas com um aviso no painel**, sugerindo **republicar**. Como o regulamento é congelado por versão, ele não se corrige sozinho. Entenda o que fazer em [Publicar o regulamento](/guias/publicar-regulamento/#regulamento-apuracao-desatualizada).
+
+**Apuração:**
+
+- **Prazo de 5 dias corridos para conferir.** Havendo resultado apurado, a organização tem cinco dias para conferir e finalizar; passado o prazo, o sistema finaliza sozinho. **Só vale se o regulamento publicado daquela campanha declarar esse prazo** — ninguém pode ser submetido a uma regra que não estava no documento que leu.
+- **Aviso de concurso divergente.** Se o resultado trazido da Loteria Federal não for o concurso previsto para a campanha, o sistema avisa **antes** de sortear.
+- **Erro de consulta deixou de mentir.** Quando a consulta à Caixa falha, agora aparece uma mensagem pedindo para digitar o número à mão — antes a tela dizia "resultado buscado" mesmo sem ter trazido nada.
+- **A busca automática do resultado passou a funcionar.** A opção existia em **Configurações → Apuração** e não fazia efeito nenhum; agora funciona de verdade (e a confirmação continua sendo sua). Tudo em [Realizar o sorteio](/guias/realizar-sorteio/).
+
+**Campos que existiam na tela e não surtiam efeito — agora surtem:**
+
+- **Organização:** o **favicon** vira o ícone da aba do navegador na página da campanha; o **texto institucional curto** e o **contato de dúvidas** aparecem na página pública. Veja [Configurar a organização](/guias/configurar-organizacao/).
+- **Templates de cartão:** ganharam **quantidade recomendada**, **dica de uso** e **status Ativo/Inativo** — um template inativo deixa de ser oferecido ao criar campanha. Veja [Templates & Cartões](/modulos/templates-cartoes/).
+- **Painel de transparência:** dois indicadores novos, **Participantes** e **Resultado do sorteio**. ⚠️ Atenção: o painel de transparência **só aparece nos temas Clássico, Emotivo e Sofisticado** — nos temas Moderno (o padrão), Divertido e Simples ele não é exibido, mesmo com os indicadores marcados. Detalhes em [Personalizar a página pública](/guias/personalizar-pagina-publica/#painel-transparencia).
+
+**Correção de cartões:**
+
+- Ao liberar um cartão ligado a um **pedido pago**, a confirmação agora mostra **o número do pedido e o e-mail do comprador** — você vê exatamente quem seria prejudicado antes de decidir. Veja [Corrigir cartões](/guias/corrigir-cartoes/).
+
+---
+
+## Versão 2.22 — Um lugar só para escolher o método de apuração
+
+O **método de apuração** (Loteria Federal, apuração interna auditável ou registro manual) passou a ser definido **exclusivamente** na aba **Formulário** da campanha.
+
+Antes existiam **dois seletores** — um no formulário e outro na aba Apuração — e eles podiam discordar entre si: a campanha ficava "certa" numa tela e "errada" na outra, o regulamento imprimia o método em branco e o número do cartão sumia para o comprador. Agora:
+
+- A aba **Apuração** apenas **mostra** o método escolhido e indica onde alterá-lo.
+- O campo é **obrigatório para publicar** a campanha.
+- O mesmo valor governa o sorteio, o texto do regulamento e a exibição do número de sorteio ao comprador.
+
+Veja [Realizar o sorteio](/guias/realizar-sorteio/) e [Criar a primeira campanha](/guias/criar-primeira-campanha/).
+
+---
+
+## Versão 2.21 — A apuração pela Loteria Federal ficou mesmo um sorteio
+
+A regra antiga de apuração pela Loteria Federal **não distribuía a sorte por igual**: medindo o comportamento real, um único cartão chegava a concentrar a maior parte das chances numa rifa pequena. Isso foi corrigido.
+
+A regra nova é fácil de conferir e não deixa margem para interpretação:
+
+1. Os cartões **vendidos** entram em ordem — são **N** cartões.
+2. Os **5 números** da extração oficial são **colados um no outro, na ordem em que saíram**, formando um número grande (**V**).
+3. O **resto da divisão de V por N** aponta o cartão contemplado.
+
+Numa planilha, a conta é `=MOD(V;N)+1`. Como o resto sempre cai dentro da lista, **o resultado sempre resolve** — acabaram a "regra de aproximação" e a configuração de dígitos. O **regulamento passou a descrever essa regra com um exemplo numérico**, para qualquer participante refazer a conta em casa.
+
+---
+
+## Versão 2.20 — As vendas param na hora certa (e alguém fica sabendo)
+
+Uma correção importante para quem administra campanhas: **a data de fim das vendas passou a ser respeitada de fato**. Antes, o prazo era praticamente decorativo — a campanha podia continuar vendendo depois do fim do período.
+
+- **A página pública avisa** que as vendas foram encerradas, informando **a data prevista do sorteio**.
+- **A venda é barrada no momento da ação** (ao reservar e ao finalizar a compra), não só por um serviço em segundo plano que pode falhar. Quem reservou **dentro** do prazo continua conseguindo concluir dentro do tempo de reserva.
+- **E-mail novo: "Vendas encerradas"**, enviado a **todos os coordenadores** da campanha assim que o período termina — com o resumo do que foi vendido, a data do sorteio e o **passo a passo do que fazer agora, conforme o método de apuração** daquela campanha. Veja [Configurar os e-mails](/guias/configurar-emails/).
 
 ---
 

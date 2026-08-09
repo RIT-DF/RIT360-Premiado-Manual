@@ -6,9 +6,9 @@ permalink: /guias/publicar-regulamento/
 task: publicar-regulamento
 role: admin
 routes: ["#/campanhas/:id"]
-screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais]
+screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais, admin-aviso-republicar-regulamento]
 source_docs: [PRD_Bussola_Premiada.md#8.10, PRD_Bussola_Premiada.md#8.11]
-last_verified: 2026-07-23
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -51,6 +51,30 @@ Abra a campanha e clique na aba de topo **Regulamento**. No topo há uma **barra
 > ![Seletor de campo sugerido no Banco de Cláusulas](/assets/screenshots/reg-banco-clausulas-target.png)
 >
 > Ao inserir uma cláusula, o texto é **copiado** para a campanha e fica **congelado** ali: editar a biblioteca depois **não altera** os regulamentos já montados.
+
+## Campanhas de Loteria Federal: as cláusulas de apuração entram sozinhas
+
+> **Novidade da versão 2.23.0.** Se o **método de apuração** da campanha for **Loteria Federal**, o assistente já traz, prontas, as cláusulas que descrevem como o ganhador será encontrado. Você não precisa escrevê-las — e **não consegue publicar sem elas**.
+
+São quatro cláusulas, na seção **Apuração** do documento:
+
+- **Apuração pela Loteria Federal** — a regra explicada passo a passo, com a fórmula de conferência e um **exemplo numérico completo**, para qualquer participante refazer a conta.
+- **Campanhas com mais de um prêmio** — como o sorteio se repete para o 2º, o 3º prêmio…
+- **Concurso oficial utilizado** — qual extração vale (a primeira depois do fim das vendas), com o número previsto do concurso.
+- **Conferência e divulgação do resultado** — o prazo de **5 (cinco) dias corridos** para a organização conferir e divulgar, e a validação automática pelo sistema depois disso.
+
+Se você tentar publicar um regulamento de campanha Loteria Federal sem a descrição da apuração, o plugin **barra a publicação** e avisa o que falta. Isso existe porque, até a versão 2.22.0, o texto padrão remetia a regras que nunca chegavam a ser descritas no documento — o participante lia uma promessa vazia.
+
+### "Este regulamento está com a apuração desatualizada"
+{: #regulamento-apuracao-desatualizada }
+
+Campanhas cujo regulamento foi publicado **antes** dessa mudança aparecem **sinalizadas com um aviso no painel do WordPress**, listando os nomes das campanhas afetadas.
+
+![Aviso no painel do WordPress listando as campanhas a republicar](/assets/screenshots/admin-aviso-republicar-regulamento.png)
+
+**O que fazer:** o texto publicado é **congelado por versão** e não se corrige sozinho. Abra a campanha, vá na aba **Regulamento** e **republique** — o plugin gera uma nova versão já com as cláusulas completas, e a anterior fica arquivada no histórico.
+
+**É urgente?** Não é bloqueante: a campanha continua funcionando normalmente. Mas há uma consequência prática — enquanto o regulamento publicado não declarar o prazo de 5 dias, aquela campanha **não** é finalizada automaticamente pelo sistema (veja [Realizar o sorteio](/guias/realizar-sorteio/#prazo-conferencia)). Se a campanha já vendeu cartões, avalie republicar com calma: o regulamento é o documento que os participantes leram.
 
 ## O que acontece ao publicar
 

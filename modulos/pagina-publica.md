@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/pagina-publica/
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
-screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade, publica-tamanho-texto]
-last_verified: 2026-07-23
+screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade, publica-tamanho-texto, publica-vendas-encerradas, publica-transparencia]
+last_verified: 2026-08-09
 status: publicado
 ---
 
@@ -20,11 +20,14 @@ Cada campanha tem um **hotsite próprio**, mobile-first, no endereço `/campanha
 
 - O(s) **prêmio(s)** com galeria de fotos — quando a campanha tem vários prêmios, todos aparecem em ordem (1º, 2º, 3º…).
 - A **história da causa** (texto rico).
-- O **progresso das vendas** e o **painel de transparência** (indicadores que você escolhe).
+- O **progresso das vendas** e o **painel de transparência** (indicadores que você escolhe — incluindo **Participantes** e **Resultado do sorteio**, a partir da 2.23.0). ⚠️ O painel só é exibido nos temas **Clássico, Emotivo e Sofisticado**; veja [Painel de transparência](/guias/personalizar-pagina-publica/#painel-transparencia).
 - A **seleção de cartões** (manual ou automática).
 - O **regulamento**.
 - A **barra de compartilhamento** (WhatsApp, Facebook, X, LinkedIn, copiar link).
 - O **resultado** do sorteio, quando a campanha é apurada — com um ganhador por prêmio, sempre mascarado por padrão.
+- Um **aviso de vendas encerradas** (a partir da 2.20.0), assim que o período de vendas termina, informando **a data prevista do sorteio**. Quem chega à página depois do prazo entende na hora o que aconteceu, em vez de tentar comprar e receber um erro.
+
+  ![Aviso de vendas encerradas na página pública](/assets/screenshots/publica-vendas-encerradas.png)
 - Um **controle de acessibilidade de tamanho do texto** (**A− / A / A+**) no canto superior direito do topo, que o visitante usa para ampliar ou reduzir a leitura. Aparece sozinho em toda campanha. Detalhes em [Personalizar a página pública](/guias/personalizar-pagina-publica/#acessibilidade--tamanho-do-texto).
 
 ## Configuração (guiada por temas)
@@ -38,6 +41,10 @@ A aparência é **guiada por temas** e definida em dois níveis:
 - **Por campanha** — na aba **Página pública** da campanha, você escolhe **Usar o padrão da organização** (herda tudo) ou **Personalizar esta campanha** (tema/esquema/fonte/seções só para aquela rifa). Aqui também ficam os indicadores de **transparência**, a **meta/termômetro**, o **vídeo** e o **compartilhamento/Open Graph**.
 
   ![Aba Página pública no admin](/assets/screenshots/bp-10-pagina-publica-admin.png)
+
+## Identidade da organização na página
+
+A partir da versão **2.23.0**, três dados da organização que já existiam nas Configurações passaram a aparecer de fato na página pública: o **favicon** (o ícone da aba do navegador), o **texto institucional curto** e o **contato de dúvidas da campanha**. Não é preciso configurar nada de novo — se os campos estiverem preenchidos em [Configurar a organização](/guias/configurar-organizacao/), eles passam a valer.
 
 ## Shortcodes para page builders
 
