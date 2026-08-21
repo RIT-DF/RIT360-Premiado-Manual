@@ -6,7 +6,7 @@ permalink: /modulos/emails/
 role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-14-emails-logs]
-last_verified: 2026-08-09
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -30,6 +30,8 @@ O módulo de e-mails cuida de toda a comunicação automática da campanha, com 
 Confirmação de compra · Nova venda (admin) · Estoque esgotado · Lançamento da campanha · Lembrete de sorteio · **Vendas encerradas (coordenadores)** · Mudança de data · Resultado do sorteio · Ganhador.
 
 O **Vendas encerradas** (novo na 2.20.0) sai quando o período de vendas termina, para **todos os coordenadores** da campanha: traz o resumo das vendas, a data prevista do sorteio e as **próximas ações conforme o método de apuração** escolhido.
+
+> Desde a **2.26.3**, os quatro e-mails que citam a data do sorteio (**Confirmação de compra**, **Lembrete de sorteio**, **Mudança de data** e **Vendas encerradas**) param de afirmar hora exata quando a campanha está no regime de estimativa (Loteria Federal por concurso, a partir da 2.26.0) — trazem a regra do concurso e o aviso de estimativa em vez disso.
 
 ## Transacional vs. promocional
 

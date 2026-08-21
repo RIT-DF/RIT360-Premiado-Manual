@@ -6,7 +6,7 @@ permalink: /modulos/apuracao/
 role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [bp-21-apuracao, bp-33-verificacao, bp-19-config-apuracao]
-last_verified: 2026-08-09
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -27,13 +27,13 @@ Antes do sorteio, a lista de cartões vendidos é **congelada**: fica fixa, com 
 ## Três métodos
 
 - **Apuração interna auditável** — semente lacrada + revelação ao finalizar. Sorteia sobre a base congelada completa, pulando reembolsados de forma determinística. **Qualquer auditor refaz a conta** e chega ao mesmo cartão.
-- **Loteria Federal** — os **5 números** da extração oficial são concatenados na ordem em que saíram, formando um número **V**; o **resto da divisão de V pela quantidade de cartões vendidos (N)** aponta o contemplado na base ordenada. A conferência cabe numa planilha: `=MOD(V;N)+1`. Como o resto sempre cai dentro da lista, **o resultado sempre resolve** — não há mais regra de aproximação nem configuração de dígitos.
+- **Loteria Federal** — os **5 números** da extração oficial são concatenados na ordem em que saíram, formando um número **V**; o **resto da divisão de V pela quantidade de cartões vendidos (N)** aponta o contemplado na base ordenada. A conferência cabe numa planilha: `=MOD(V;N)+1`. Como o resto sempre cai dentro da lista, **o resultado sempre resolve** — não há mais regra de aproximação nem configuração de dígitos. **Desde a 2.26.0, a campanha não grava mais uma data digitada para este método** — o coordenador escolhe o **concurso** (1º a 5º após o fim das vendas) na etapa *Configurações da Campanha*, e o sistema deriva a data prevista, sempre como estimativa. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal).
 - **Registro manual** — resultado feito fora do sistema, registrado com justificativa e anexos.
 
 ## Automação da Loteria Federal
 
 - **Busca do resultado** — o plugin consulta a extração oficial. Em **Configurações → Apuração** você pode ligar a **busca automática**, que pré-preenche o resultado assim que a campanha fica pronta para apurar; **a confirmação continua sendo humana**.
-- **Aviso de divergência** — se o concurso trazido não for o previsto para a campanha, o sistema avisa **antes** de sortear. A regra vale sobre o número, e o número muda com o concurso.
+- **Aviso de divergência** — se o concurso trazido não for o previsto para a campanha, o sistema avisa **antes** de sortear. A regra vale sobre o número, e o número muda com o concurso. Desde a **2.27.0**, o aviso mostra os **cinco números premiados oficiais**, na ordem do sorteio, lado a lado com o que a campanha usaria, mais um link para a página de resultados da Caixa (que não tem endereço por concurso específico — por isso os números aparecem na própria tela).
 - **Erro de consulta** — se a Caixa não responder, o sistema diz que não conseguiu consultar e pede o número manualmente (em vez de anunciar sucesso sem ter trazido nada).
 - **Prazo de conferência** — havendo resultado apurado, a organização tem **5 dias corridos** para conferir; passado o prazo, o sistema finaliza sozinho. Essa finalização automática **só se aplica se o regulamento publicado daquela campanha declarar o prazo** — regulamento é texto congelado por versão, e ninguém pode ser submetido a uma regra que não estava no documento que leu.
 

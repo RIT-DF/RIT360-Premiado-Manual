@@ -15,6 +15,42 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 
 ---
 
+## Versão 2.29 — Cada campanha com sua categoria no WooCommerce
+
+**Prestação de contas:**
+
+- **Toda campanha ganha uma categoria de produto no WooCommerce.** Ela entra como subcategoria dentro de "Campanhas premiadas" — você escolhe uma já existente ou cria uma nova ao montar a campanha, e se não escolher nada, o sistema usa o nome da campanha. Isso faz a receita chegar **já classificada por campanha** ao RIT360 Financeiro, em vez de cair sem categoria na prestação de contas segmentada.
+- Campanhas que já existiam antes desta versão foram classificadas automaticamente — não é preciso voltar em nenhuma para corrigir. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#categoria-campanha).
+
+---
+
+## Versão 2.28 — Avisos do plugin em lugar fixo
+
+- **Os avisos do plugin (erros, confirmações, alertas) passaram a aparecer sempre no mesmo lugar**: logo abaixo do cabeçalho e acima da barra de abas. Antes, em algumas telas, um aviso podia aparecer encravado dentro do próprio cabeçalho — visualmente estranho, mas sem risco à informação.
+- No card de resumo rápido da página pública, a frase de estimativa da data do sorteio (regra + data + ressalva) ficou mais compacta no celular: a data aparece em destaque, e a ressalva vem por baixo, menor.
+
+---
+
+## Versão 2.27 — O aviso de concurso divergente mostra os números oficiais
+
+- **Quando o concurso trazido da Loteria Federal diverge do previsto para a campanha, o aviso passou a mostrar os cinco números premiados oficiais**, na ordem em que foram sorteados, lado a lado com o que a campanha usaria — mais um link para a página de resultados da Loteria Federal na Caixa (abre em nova aba). Antes, o aviso só dizia que os concursos divergiam, sem trazer o que conferir.
+- **Uma ressalva honesta:** o portal da Caixa não tem endereço específico por concurso — é uma tela que busca o resultado por dentro. Por isso o link leva à página da modalidade, e a conferência de fato se faz pelos números exibidos na própria tela do plugin, não pelo link. Veja [Realizar o sorteio](/guias/realizar-sorteio/).
+
+---
+
+## Versão 2.26 — A data do sorteio da Loteria Federal deixou de ser um chute
+
+**A mudança mais visível deste ciclo:** em campanhas de **Loteria Federal**, você não digita mais a data prevista do sorteio.
+
+- **Agora você escolhe o concurso** — o 1º, 2º, 3º, 4º ou 5º concurso realizado **depois do encerramento das vendas**. Ninguém tem como adivinhar a data exata que a Caixa vai realizar o próximo concurso; o que faz sentido registrar é a regra, não uma data. O sistema calcula e mostra a data prevista, sempre rotulada como **estimativa, sujeita a alteração pela Caixa**.
+- **O regulamento acompanha:** a cláusula de apuração passa a descrever o concurso escolhido por extenso, com a data prevista como conveniência, nunca como compromisso.
+- **Métodos interna e manual continuam com data digitada**, exatamente como antes. Campanha de Loteria Federal criada antes desta versão também mantém a data que já tinha, até que alguém entre e escolha um concurso para ela.
+- **Os e-mails pararam de cravar hora exata quando a data é estimativa.** Confirmação de compra, lembrete de sorteio, mudança de data e vendas encerradas passaram a trazer a regra do concurso, sem hora, evitando prometer uma precisão que não existe — e um e-mail já enviado não se corrige sozinho.
+
+Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal) e [Configurar os e-mails](/guias/configurar-emails/).
+
+---
+
 ## Versão 2.24 — Ajuste fino do regulamento, avisos que se comportam e transparência em qualquer tema
 
 **Regulamento:**

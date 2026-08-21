@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais, admin-aviso-republicar-regulamento, reg-apuracao-override, reg-apuracao-override-personalizado]
 source_docs: [PRD_Bussola_Premiada.md#8.10, PRD_Bussola_Premiada.md#8.11, CHANGELOG.md#2.24.0]
-last_verified: 2026-08-09
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -61,7 +61,7 @@ São quatro cláusulas, na seção **Apuração** do documento:
 
 - **Apuração pela Loteria Federal** — a regra explicada passo a passo, com a fórmula de conferência e um **exemplo numérico completo**, para qualquer participante refazer a conta.
 - **Campanhas com mais de um prêmio** — como o sorteio se repete para o 2º, o 3º prêmio…
-- **Concurso oficial utilizado** — qual extração vale (a primeira depois do fim das vendas), com o número previsto do concurso.
+- **Concurso oficial utilizado** — qual extração vale, por extenso ("o 2º concurso da Loteria Federal realizado após o encerramento das vendas", por exemplo, conforme o que você escolheu ao criar a campanha), com o número e a data previstos apresentados como **conveniência** e marcados como **estimativa**. O que rege a apuração é a regra, nunca o número previsto.
 - **Conferência e divulgação do resultado** — o prazo de **5 (cinco) dias corridos** para a organização conferir e divulgar, e a validação automática pelo sistema depois disso.
 
 Se você tentar publicar um regulamento de campanha Loteria Federal sem a descrição da apuração, o plugin **barra a publicação** e avisa o que falta. Isso existe porque, até a versão 2.22.0, o texto padrão remetia a regras que nunca chegavam a ser descritas no documento — o participante lia uma promessa vazia.

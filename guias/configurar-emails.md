@@ -8,7 +8,7 @@ role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-13-emails-config, bp-14-emails-logs]
 source_docs: [PRD_Bussola_Premiada.md#8.18, PRD_Bussola_Premiada.md#8.19]
-last_verified: 2026-08-09
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -40,6 +40,8 @@ Na aba **Templates**, edite o assunto e o corpo de cada e-mail. Você pode usar 
 ![Aba Templates de e-mail](/assets/screenshots/bp-12-emails-templates.png)
 
 Use o botão de **enviar teste** para receber uma amostra e conferir como fica.
+
+> **Desde a versão 2.26.3, quatro e-mails não cravam mais hora exata quando a data do sorteio é uma estimativa.** Em campanha de Loteria Federal (que passou a funcionar por concurso, veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal)), a **Confirmação de compra**, o **Lembrete de sorteio**, a **Mudança de data** e o **Vendas encerradas** passaram a trazer a regra do concurso e o aviso de estimativa, sem hora — afirmar precisão que o sistema não tem gerava confusão, e e-mail já enviado não se corrige sozinho. Em campanhas com data digitada (interna, manual, ou Loteria Federal antiga) o texto não muda.
 
 ## Configurar o remetente
 

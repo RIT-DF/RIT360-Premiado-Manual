@@ -6,9 +6,9 @@ permalink: /guias/personalizar-pagina-publica/
 task: personalizar-pagina-publica
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
-screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video, publica-transparencia, publica-transparencia-secoes, publica-vendas-encerradas]
-source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0, CHANGELOG.md#2.13.0, CHANGELOG.md#2.13.2]
-last_verified: 2026-08-09
+screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video, publica-transparencia, publica-transparencia-secoes, publica-vendas-encerradas, publica-sorteio-estimativa]
+source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0, CHANGELOG.md#2.13.0, CHANGELOG.md#2.13.2, "#197"]
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -98,6 +98,14 @@ O **hero** é a primeira faixa da página — o "cartaz" da campanha. No card **
 > A **imagem do hero é separada das fotos do prêmio**: use o botão **Selecionar imagem** para enviar uma arte dedicada ao topo. Sem imagem, o modo cai automaticamente para "Só texto".
 
 ![Card Topo da página (hero), com os modos de exibição](/assets/screenshots/publica-hero-modos.png)
+
+### Resumo rápido
+
+Logo abaixo do topo, a seção **Resumo rápido** mostra, em cards curtos, os números que quem chega à página quer ver de cara: a **data do sorteio**, o **preço do cartão**, o **prêmio** e quantos cartões já foram **vendidos**.
+
+Em campanha de **Loteria Federal**, o card de sorteio traz a data em destaque e, logo abaixo, a **regra e a ressalva de estimativa** — por exemplo, *"1º concurso da Loteria Federal após o encerramento das vendas — estimativa, sujeita a alteração pela Caixa"*. É o mesmo raciocínio do campo de concurso no admin (veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal)): o que existe de fato é a regra, a data é só a previsão de hoje.
+
+![Resumo rápido na página pública, com a ressalva de estimativa no card de sorteio](/assets/screenshots/publica-sorteio-estimativa.png)
 
 ## O que mais dá para ajustar nesta aba
 

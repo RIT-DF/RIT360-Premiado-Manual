@@ -6,9 +6,9 @@ permalink: /guias/criar-primeira-campanha/
 task: criar-primeira-campanha
 role: admin
 routes: ["#/campanhas", "#/campanhas/nova"]
-screenshots: [bp-02-campanhas-lista, bp-03-campanha-nova-dados, bp-04-campanha-premio, campanha-premio-midia-multipla, bp-05-campanha-config]
-source_docs: [PRD_Bussola_Premiada.md#8.2, PRD_Bussola_Premiada.md#8.3, "#137"]
-last_verified: 2026-08-09
+screenshots: [bp-02-campanhas-lista, bp-03-campanha-nova-dados, bp-04-campanha-premio, campanha-premio-midia-multipla, bp-05-campanha-config, campanha-concurso-loteria-federal, campanha-categoria-woocommerce]
+source_docs: [PRD_Bussola_Premiada.md#8.2, PRD_Bussola_Premiada.md#8.3, "#137", "#197", "#202"]
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -62,14 +62,48 @@ Todos os prêmios são sorteados **da mesma base de cartões vendidos, sem repet
 Aqui ficam os números e as regras:
 
 - **Valor unitário do cartão** e **quantidade de cartões** (obrigatórios).
-- **Datas** de início/fim das vendas e do **sorteio**.
+- **Datas** de início/fim das vendas e — conforme o método de apuração — a data do **sorteio** ou o **concurso** que vai definir essa data (veja abaixo).
 - **Tempo de reserva do cartão** (em minutos) — quanto tempo um cartão fica "segurado" no carrinho antes de voltar ao pool se a compra não for concluída.
 - **Método de apuração** — **Loteria Federal**, **Apuração interna auditável** ou **Registro manual**.
+- **Categoria da campanha** — a subcategoria que classifica a receita no WooCommerce (veja abaixo).
 - **Descontos por quantidade** (opcional).
 
 ![Etapa Configurações da Campanha](/assets/screenshots/bp-05-campanha-config.png)
 
 > **O método de apuração fica só aqui (versão 2.22.0).** Este é o **único** lugar onde o método é definido. Ele governa o sorteio (aba Apuração), o texto do regulamento e a exibição do **número de sorteio** do cartão para o comprador — e é **obrigatório para publicar** a campanha. Antes havia um segundo seletor na aba Apuração, que podia discordar deste; ele deixou de existir. Detalhes em [Realizar o sorteio](/guias/realizar-sorteio/).
+
+### Loteria Federal: você escolhe o concurso, não a data
+{: #concurso-loteria-federal }
+
+> **Mudou na versão 2.26.0.** Se o método de apuração for **Loteria Federal**, você não digita mais a data do sorteio — você escolhe **qual concurso** vai valer.
+
+Ninguém consegue saber com antecedência a data exata do próximo concurso da Loteria Federal: quem depende de um calendário da Caixa está sempre chutando. Por isso o que a campanha registra é uma **regra** — "o 3º concurso realizado depois do fim das vendas", por exemplo — nunca uma data fixa. É essa regra que vale para valer o sorteio e para o regulamento, mesmo que o calendário da Caixa mude depois.
+
+Escolha entre o **1º e o 5º concurso** da Loteria Federal realizado **após o encerramento das vendas**. Cada opção mostra a **data prevista**, sempre rotulada como **estimativa, sujeita a alteração pela Caixa** — é só uma referência para você e para quem compra, calculada a partir do calendário de concursos da Caixa.
+
+![Seletor de concurso da Loteria Federal, com a previsão de cada opção](/assets/screenshots/campanha-concurso-loteria-federal.png)
+
+> 💡 **Exemplo**
+>
+> As vendas da "Rifa do Dia das Crianças" terminam em 05/10/2026. Você escolhe o **2º concurso** depois disso. O sistema mostra a previsão — hoje, 12/10/2026 — mas o que fica gravado é a regra "2º concurso após 05/10/2026". Se a Caixa antecipar ou atrasar um sorteio no meio do caminho, a previsão exibida se ajusta sozinha; a regra continua sendo a mesma.
+
+> ⚠️ **Métodos interna e manual continuam com data digitada.** A mudança vale só para Loteria Federal. Campanha que já existia antes da 2.26.0 também mantém a data que já tinha — ela só passa a funcionar por concurso se você entrar na campanha e escolher um.
+
+### Categoria da campanha no WooCommerce
+{: #categoria-campanha }
+
+> **Novidade da versão 2.29.0.** Toda campanha ganha uma **categoria de produto** no WooCommerce — o que faz a receita da campanha chegar **já classificada** ao RIT360 Financeiro, entrando direto na prestação de contas segmentada por campanha, em vez de cair sem categoria.
+
+Você não precisa saber o que é "categoria de produto do WooCommerce" para usar este campo: pense nele como uma **gaveta** para a receita desta campanha, dentro da gaveta maior "Campanhas premiadas". Duas opções:
+
+- **Escolher uma subcategoria já existente**, no seletor.
+- **Criar uma nova**, digitando o nome em **Nova subcategoria…** e clicando em **Criar subcategoria**.
+
+**Se você não escolher nada, o sistema usa o nome da campanha** como subcategoria — a campanha nunca fica sem categoria, mesmo que você pule este campo.
+
+![Campo Categoria da campanha, com a hierarquia Campanhas premiadas e o seletor de subcategoria](/assets/screenshots/campanha-categoria-woocommerce.png)
+
+> 💡 Campanhas que já existiam antes da 2.29.0 foram classificadas **automaticamente** na atualização — você não precisa voltar em nenhuma delas para corrigir isso.
 
 ## Salvar e completar
 

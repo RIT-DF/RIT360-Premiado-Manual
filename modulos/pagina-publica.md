@@ -6,7 +6,7 @@ permalink: /modulos/pagina-publica/
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
 screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade, publica-tamanho-texto, publica-vendas-encerradas, publica-transparencia]
-last_verified: 2026-08-09
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -21,6 +21,7 @@ Cada campanha tem um **hotsite próprio**, mobile-first, no endereço `/campanha
 - O(s) **prêmio(s)** com galeria de fotos — quando a campanha tem vários prêmios, todos aparecem em ordem (1º, 2º, 3º…).
 - A **história da causa** (texto rico).
 - O **progresso das vendas** e o **painel de transparência** (indicadores que você escolhe — incluindo **Participantes** e **Resultado do sorteio**, a partir da 2.23.0). A partir da **2.24.0** o painel funciona **nos 6 temas**; nos temas Moderno, Divertido e Simples ele nasce **desligado** e precisa ser ligado nas seções. Veja [Painel de transparência](/guias/personalizar-pagina-publica/#painel-transparencia).
+- Um **resumo rápido** com sorteio, preço, prêmio e vendidos. Em campanha de Loteria Federal, a data do sorteio vem sempre rotulada como **estimativa, sujeita a alteração pela Caixa** — desde a 2.26.0, a campanha guarda uma regra de concurso, não uma data fixa.
 - A **seleção de cartões** (manual ou automática).
 - O **regulamento**.
 - A **barra de compartilhamento** (WhatsApp, Facebook, X, LinkedIn, copiar link).

@@ -6,9 +6,9 @@ permalink: /guias/realizar-sorteio/
 task: realizar-sorteio
 role: admin
 routes: ["#/campanhas/:id", "#/organizacao"]
-screenshots: [bp-05-campanha-config, bp-21-apuracao, apuracao-loteria-busca, apuracao-aviso-divergencia, bp-19-config-apuracao]
-source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15, "#186", "#182", "#185"]
-last_verified: 2026-08-09
+screenshots: [bp-05-campanha-config, bp-21-apuracao, apuracao-loteria-busca, apuracao-aviso-divergencia, bp-19-config-apuracao, campanha-concurso-loteria-federal]
+source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15, "#186", "#182", "#185", "#194", "#197", "#198"]
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -31,6 +31,8 @@ As três opções são:
 - **Registro manual** — para sorteios feitos fora do sistema (uma live, um evento). Você registra o resultado com **justificativa e anexos**.
 
 Ao escolher **Loteria Federal**, cada cartão passa a ter um **número de sorteio** (a posição dele na lista) exibido para o participante em todos os lugares — na grade de escolha, no carrinho, no e-mail de confirmação, no pedido, no painel "Meus cartões" e no resultado. É esse número que casa com a extração oficial.
+
+> **Desde a versão 2.26.0, você não digita mais a data do sorteio quando o método é Loteria Federal — você escolhe o concurso.** Ninguém sabe com antecedência a data exata do próximo concurso da Caixa, então o que a campanha registra é a **regra** (por exemplo, "o 2º concurso após o fim das vendas"), não uma data fixa. Esse campo fica na mesma aba Formulário, na etapa *Configurações da Campanha* — veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal). Métodos interna e manual continuam com data digitada, como sempre.
 
 > 💡 **E a aba Dados legais?**
 >
@@ -68,9 +70,13 @@ Quem quiser conferir em casa consegue: numa planilha, a conta é `=MOD(V;N)+1`. 
 
 Na aba Apuração, depois de congelar a base, aparecem cinco campos — **1º a 5º prêmio** — na ordem do sorteio. Clique em **Buscar resultado** para o sistema trazer a extração oficial e preencher os cinco, ou digite os números à mão a partir do resultado publicado pela Caixa. Depois é só **Sortear**. Duas coisas que o sistema faz por você:
 
-- **Se o concurso trazido não for o esperado para esta campanha**, aparece um **aviso de divergência** antes de qualquer sorteio, comparando o concurso que veio com o que era previsto. Confira antes de prosseguir — a regra vale sobre o número, e o número muda com o concurso.
+- **Se o concurso trazido não for o esperado para esta campanha**, aparece um **aviso de divergência** antes de qualquer sorteio. Confira antes de prosseguir — a regra vale sobre o número, e o número muda com o concurso.
 
   ![Aviso de concurso divergente na aba Apuração](/assets/screenshots/apuracao-aviso-divergencia.png)
+
+  > **Desde a versão 2.27.0, o aviso mostra o que conferir, e onde.** Ele traz, lado a lado com o que a campanha usaria, o **número do concurso**, a **data da apuração** e os **cinco números premiados oficiais, na ordem em que foram sorteados** — mais um **link para a página oficial de resultados da Loteria Federal na Caixa**, que abre em nova aba. É o suficiente para qualquer pessoa conferir sem precisar entender o sistema por dentro.
+  >
+  > ⚠️ **O link leva à página da modalidade, não direto ao concurso.** O portal da Loteria Federal da Caixa não tem endereço estável por concurso — é uma tela que busca o resultado por dentro. Por isso os cinco números aparecem na própria tela do plugin: é ali que você compara, não no link.
 
 - **Se a consulta à Caixa falhar**, aparece uma **mensagem de erro** pedindo que você digite os números manualmente. (Até a versão 2.22.0 a tela dizia que o resultado tinha sido buscado mesmo quando nada tinha vindo — esse é justamente o defeito corrigido.)
 
