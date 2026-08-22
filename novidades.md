@@ -15,12 +15,19 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 
 ---
 
+## Versão 2.30 — Classificação automática das campanhas existentes
+
+**Prestação de contas:**
+
+- **Campanhas que já existiam ganharam a categoria de produto no WooCommerce automaticamente** — não é preciso voltar em nenhuma para corrigir. A categoria da campanha convive com a(s) categoria(s) que o produto já tinha na loja; nenhuma delas é removida. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#categoria-campanha).
+
+---
+
 ## Versão 2.29 — Cada campanha com sua categoria no WooCommerce
 
 **Prestação de contas:**
 
-- **Toda campanha ganha uma categoria de produto no WooCommerce.** Ela entra como subcategoria dentro de "Campanhas premiadas" — você escolhe uma já existente ou cria uma nova ao montar a campanha, e se não escolher nada, o sistema usa o nome da campanha. Isso faz a receita chegar **já classificada por campanha** ao RIT360 Financeiro, em vez de cair sem categoria na prestação de contas segmentada.
-- Campanhas que já existiam antes desta versão foram classificadas automaticamente — não é preciso voltar em nenhuma para corrigir. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#categoria-campanha).
+- **Toda campanha ganha uma categoria de produto no WooCommerce.** Ela entra como subcategoria dentro de "Campanhas premiadas" — você escolhe uma já existente ou cria uma nova ao montar a campanha, e se não escolher nada, o sistema usa o nome da campanha. Isso faz a receita chegar **já classificada por campanha** ao RIT360 Financeiro, em vez de cair sem categoria na prestação de contas segmentada. Veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#categoria-campanha).
 
 ---
 

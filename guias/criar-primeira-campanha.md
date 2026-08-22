@@ -103,7 +103,9 @@ Você não precisa saber o que é "categoria de produto do WooCommerce" para usa
 
 ![Campo Categoria da campanha, com a hierarquia Campanhas premiadas e o seletor de subcategoria](/assets/screenshots/campanha-categoria-woocommerce.png)
 
-> 💡 Campanhas que já existiam antes da 2.29.0 foram classificadas **automaticamente** na atualização — você não precisa voltar em nenhuma delas para corrigir isso.
+> 💡 A categoria da campanha **convive** com as categorias que o produto já tinha na loja — nenhuma delas é removida. Só a categoria "Sem categoria" (a que o WooCommerce atribui sozinho quando nada mais foi definido) sai de cena quando a da campanha entra, porque ela não representa nada.
+
+> 💡 Campanhas que já existiam antes da versão **2.30.0** foram classificadas **automaticamente** na atualização — você não precisa voltar em nenhuma delas para corrigir isso.
 
 ## Salvar e completar
 

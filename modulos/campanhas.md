@@ -36,7 +36,7 @@ Arquivar é a forma de **tirar da frente** as campanhas antigas sem perdê-las. 
 
 Uma campanha se organiza em **abas de topo**:
 
-- **Formulário** (3 etapas: Dados da Campanha · Dados do Prêmio · Configurações da Campanha). A etapa **Dados do Prêmio** aceita **um ou vários prêmios** (1º, 2º, 3º lugar…). Em **Configurações da Campanha** ficam também o **concurso da Loteria Federal** (em vez de data digitada, desde a 2.26.0) e a **categoria da campanha no WooCommerce** (desde a 2.29.0, para o RIT360 Financeiro receber a receita já classificada) — veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal).
+- **Formulário** (3 etapas: Dados da Campanha · Dados do Prêmio · Configurações da Campanha). A etapa **Dados do Prêmio** aceita **um ou vários prêmios** (1º, 2º, 3º lugar…). Em **Configurações da Campanha** ficam também o **concurso da Loteria Federal** (em vez de data digitada, desde a 2.26.0) e a **categoria da campanha no WooCommerce** (desde a 2.29.0, para o RIT360 Financeiro receber a receita já classificada; ela convive com as demais categorias do produto, sem removê-las) — veja [Criar a primeira campanha](/guias/criar-primeira-campanha/#concurso-loteria-federal).
 - **Regulamento** — obrigatório para publicar (veja [Regulamento](/modulos/regulamento/)).
 - **Dados legais** — autorização, processo, observações.
 - **Página pública** — template, transparência, compartilhamento (veja [Página pública](/modulos/pagina-publica/)).
