@@ -15,6 +15,14 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 
 ---
 
+## Versão 2.31 — Os produtos RIT e V3RTECH ficam juntos no menu
+
+- **A entrada do RIT360 Premiado passa a aparecer junto com a dos outros produtos da casa**, no menu lateral do WordPress: primeiro o bloco RIT, depois o V3RTECH, cada um em ordem alfabética, sem plugins de outros fabricantes no meio. Antes, num site com vários produtos nossos instalados, eles ficavam espalhados pela coluna — às vezes um deles bem no fim, abaixo de "Configurações".
+- **Nada muda para você além de onde a entrada fica na lista.** O nome, o ícone e todas as telas continuam iguais, e o caminho de acesso é o mesmo: clicar em **RIT360 Premiado** no menu lateral.
+- **Num site que só tenha este produto instalado, nada muda** — não há bloco a formar.
+
+---
+
 ## Versão 2.30 — Classificação automática das campanhas existentes
 
 **Prestação de contas:**
