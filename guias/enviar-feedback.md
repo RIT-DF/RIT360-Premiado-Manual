@@ -8,7 +8,7 @@ role: admin
 routes: ["#/"]
 screenshots: [bp-42-feedback, bp-43-feedback-depoimento]
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-13
+last_verified: 2026-09-14
 status: publicado
 ---
 

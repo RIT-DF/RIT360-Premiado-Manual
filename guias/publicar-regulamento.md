@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [reg-assistente-etapas, reg-outras-clausulas, reg-ordenar-clausulas, reg-banco-clausulas-target, bp-09-dados-legais, admin-aviso-republicar-regulamento, reg-apuracao-override, reg-apuracao-override-personalizado]
 source_docs: [PRD_Bussola_Premiada.md#8.10, PRD_Bussola_Premiada.md#8.11, CHANGELOG.md#2.24.0]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

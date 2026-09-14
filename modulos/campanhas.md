@@ -7,7 +7,7 @@ role: admin
 routes: ["#/campanhas", "#/campanhas/nova", "#/campanhas/:id"]
 screenshots: [bp-02-campanhas-lista, bp-03-campanha-nova-dados, bp-05-campanha-config]
 source_docs: ["#136"]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

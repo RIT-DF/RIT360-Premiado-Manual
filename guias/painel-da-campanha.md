@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [bp-39-painel-campanha, bp-40-painel-campanha-mobile, bp-41-painel-campanha-prestacao]
 source_docs: [CHANGELOG.md#1.12.0, ARCHITECTURE.md#adr-015]
-last_verified: 2026-07-06
+last_verified: 2026-09-14
 status: publicado
 ---
 

@@ -7,7 +7,7 @@ role: auditor
 routes: ["#/auditoria"]
 screenshots: [bp-24-auditoria]
 source_docs: [PRD_Bussola_Premiada.md#9.3]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

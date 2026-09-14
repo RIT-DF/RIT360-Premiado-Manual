@@ -8,7 +8,7 @@ role: admin
 routes: ["#/templates", "#/campanhas/:id"]
 screenshots: [bp-07-templates, bp-06-campanha-cartoes]
 source_docs: [PRD_Bussola_Premiada.md#8.4, PRD_Bussola_Premiada.md#8.5]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 

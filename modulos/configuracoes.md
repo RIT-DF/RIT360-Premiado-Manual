@@ -6,7 +6,7 @@ permalink: /modulos/configuracoes/
 role: admin
 routes: ["#/organizacao"]
 screenshots: [bp-15-config-organizacao, bp-16-config-identidade, bp-27-config-usuarios, bp-28-config-globais-campanha, bp-19-config-apuracao, bp-20-config-pdf]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 

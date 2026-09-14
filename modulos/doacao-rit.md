@@ -6,7 +6,7 @@ permalink: /modulos/doacao-rit/
 role: admin
 routes: ["#/organizacao", "#/"]
 screenshots: [bp-23-doacao-rit]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

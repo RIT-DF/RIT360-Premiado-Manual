@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas", "#/campanhas/nova"]
 screenshots: [bp-02-campanhas-lista, bp-03-campanha-nova-dados, bp-04-campanha-premio, campanha-premio-midia-multipla, bp-05-campanha-config, campanha-concurso-loteria-federal, campanha-categoria-woocommerce]
 source_docs: [PRD_Bussola_Premiada.md#8.2, PRD_Bussola_Premiada.md#8.3, "#137", "#197", "#202"]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

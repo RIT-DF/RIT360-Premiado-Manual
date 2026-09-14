@@ -6,7 +6,7 @@ permalink: /modulos/prestacao-contas/
 role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [bp-22-prestacao-contas]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

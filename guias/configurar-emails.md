@@ -8,7 +8,7 @@ role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-13-emails-config, bp-14-emails-logs]
 source_docs: [PRD_Bussola_Premiada.md#8.18, PRD_Bussola_Premiada.md#8.19]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

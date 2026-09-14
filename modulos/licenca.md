@@ -6,7 +6,7 @@ permalink: /modulos/licenca/
 role: admin
 routes: ["#/licenca"]
 screenshots: [bp-44-licenca]
-last_verified: 2026-08-28
+last_verified: 2026-09-14
 status: publicado
 ---
 

@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [corrigir-01-painel, corrigir-02-detalhe-cartao-vendido, corrigir-03-vincular-pedido, corrigir-04-vinculo-aplicado, corrigir-05-pedido-com-cartoes, corrigir-06-recusa-pedido-com-cartoes, corrigir-07-liberar-cartao-preso, corrigir-08-auditoria]
 source_docs: ["#177", "#176", CHANGELOG.md#2.19.0]
-last_verified: 2026-08-04
+last_verified: 2026-09-14
 status: publicado
 ---
 

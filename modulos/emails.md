@@ -6,7 +6,7 @@ permalink: /modulos/emails/
 role: admin
 routes: ["#/emails"]
 screenshots: [bp-12-emails-templates, bp-14-emails-logs]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

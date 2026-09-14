@@ -8,7 +8,7 @@ role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
 screenshots: [tema-01-org-identidade, tema-02-campanha-padrao-personalizar, publica-hero-modos, tema-03-publica-clara, tema-04-publica-escura, publica-tamanho-texto, bp-29-config-meta-video, bp-30-publica-termometro, bp-31-publica-video, publica-transparencia, publica-transparencia-secoes, publica-vendas-encerradas, publica-sorteio-estimativa]
 source_docs: [PRD_Bussola_Premiada.md#8.7, PRD_Bussola_Premiada.md#8.8, PRD_Bussola_Premiada.md#8.9, CHANGELOG.md#2.6.0, CHANGELOG.md#2.13.0, CHANGELOG.md#2.13.2, "#197"]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

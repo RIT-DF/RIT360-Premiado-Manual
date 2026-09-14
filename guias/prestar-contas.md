@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [bp-22-prestacao-contas]
 source_docs: [PRD_Bussola_Premiada.md#8.16, PRD_Bussola_Premiada.md#8.17]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

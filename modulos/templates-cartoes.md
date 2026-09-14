@@ -6,7 +6,7 @@ permalink: /modulos/templates-cartoes/
 role: admin
 routes: ["#/templates", "#/campanhas/:id"]
 screenshots: [bp-07-templates, bp-06-campanha-cartoes, templates-status-inativo]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 

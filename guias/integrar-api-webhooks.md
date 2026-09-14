@@ -8,7 +8,7 @@ role: admin
 routes: ["#/blocos"]
 screenshots: [api-01-menu-abas, api-02-nova-chave, api-03-chave-criada, api-04-novo-webhook, api-05-webhook-criado, api-06-referencia]
 source_docs: [CHANGELOG.md#2.4.0, ARCHITECTURE.md#adr-020]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

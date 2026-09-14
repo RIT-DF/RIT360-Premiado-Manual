@@ -8,7 +8,7 @@ role: admin
 routes: ["#/campanhas/:id", "#/organizacao"]
 screenshots: [bp-05-campanha-config, bp-21-apuracao, apuracao-loteria-busca, apuracao-aviso-divergencia, bp-19-config-apuracao, campanha-concurso-loteria-federal]
 source_docs: [PRD_Bussola_Premiada.md#8.14, PRD_Bussola_Premiada.md#8.15, "#186", "#182", "#185", "#194", "#197", "#198"]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

@@ -8,7 +8,7 @@ role: admin
 routes: ["#/", "#/campanhas"]
 screenshots: [bp-01-dashboard, bp-02-campanhas-lista]
 source_docs: [PRD_Bussola_Premiada.md#8.23]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

@@ -8,7 +8,7 @@ role: admin
 routes: ["#/blocos"]
 screenshots: [bp-26-blocos-editor, bp-25-blocos-referencia]
 source_docs: [PRD_Bussola_Premiada.md#8.24]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

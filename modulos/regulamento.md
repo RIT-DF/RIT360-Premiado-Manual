@@ -6,7 +6,7 @@ permalink: /modulos/regulamento/
 role: admin
 routes: ["#/campanhas/:id"]
 screenshots: [reg-assistente-etapas]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 

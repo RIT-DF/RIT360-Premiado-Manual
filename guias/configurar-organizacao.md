@@ -8,7 +8,7 @@ role: admin
 routes: ["#/organizacao"]
 screenshots: [bp-15-config-organizacao, bp-16-config-identidade, bp-28-config-globais-campanha]
 source_docs: [PRD_Bussola_Premiada.md#8.1, CHANGELOG.md#2.6.0]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 

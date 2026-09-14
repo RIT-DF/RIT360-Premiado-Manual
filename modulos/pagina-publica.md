@@ -6,7 +6,7 @@ permalink: /modulos/pagina-publica/
 role: admin
 routes: ["#/organizacao", "#/campanhas/:id", "/campanha/:slug"]
 screenshots: [bp-10-pagina-publica-admin, bp-11-pagina-publica-site, tema-01-org-identidade, publica-tamanho-texto, publica-vendas-encerradas, publica-transparencia]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

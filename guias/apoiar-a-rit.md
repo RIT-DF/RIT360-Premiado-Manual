@@ -8,7 +8,7 @@ role: admin
 routes: ["#/organizacao"]
 screenshots: [bp-23-doacao-rit]
 source_docs: [PRD_Bussola_Premiada.md#8.26]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 

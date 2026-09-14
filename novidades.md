@@ -23,6 +23,7 @@ O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a *
 - **O ícone do RIT360 Premiado no menu lateral do WordPress passa a ser o da família RIT** — o mesmo que aparece ao lado dos outros produtos RIT instalados no site.
 - **Endereços antigos de qualquer seção que você tenha salvo nos favoritos continuam funcionando.** Quem abrir um link de uma aba sem ter o papel necessário vê, dentro do painel, a mensagem "Você não tem permissão para acessar esta tela." — veja [Papéis](/papeis/).
 - **Nada muda em função, campo ou permissão de nenhuma tela.**
+- **No celular, a tela de Nova campanha deixou de rolar para o lado** — o formulário agora se ajusta à largura da tela, sem precisar arrastar horizontalmente para ler um campo.
 
 ---
 

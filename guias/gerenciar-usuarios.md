@@ -6,7 +6,7 @@ role: admin
 routes: ["#/organizacao"]
 screenshots: [bp-27-config-usuarios]
 source_docs: [PRD_Bussola_Premiada.md#8.25, BP-135]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 
