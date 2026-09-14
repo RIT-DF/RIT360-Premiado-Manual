@@ -3,15 +3,26 @@ title: "Novidades"
 nav_order: 8
 permalink: /novidades/
 source_docs: [CHANGELOG.md]
-last_verified: 2026-08-09
+last_verified: 2026-09-14
 status: publicado
 ---
 
 # Novidades
 
-O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no topo do painel, ao lado da logo (ex.: *RIT360 Premiado · v1.2.1*).
+O que há de novo no RIT360 Premiado, em linguagem simples. Cada item indica a **versão** do plugin em que a novidade chegou. Você vê a versão instalada no cabeçalho do painel, logo abaixo do nome da tela (ex.: *Dashboard · v2.33.0*).
 
 > Esta é uma versão amigável do histórico técnico. O registro completo para desenvolvedores fica no `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.33 — O painel veste a identidade da família RIT360
+
+- **O cabeçalho e a barra de abas agora são os mesmos dos outros produtos da família RIT360.** Continuam mostrando a logo, o nome da tela, a versão e os botões **Feedback** e **Manual / Guia** — só a moldura muda. A aba em que você está passa a aparecer com um **traço âmbar** embaixo do nome.
+- **As 7 abas continuam as mesmas, na mesma ordem** — Dashboard, Campanhas, Templates, Auditoria, Configurações, Shortcodes e API, Licença — e cada pessoa continua vendo só as que seu papel permite.
+- **Os avisos do WordPress ganharam uma faixa própria**, logo abaixo da barra de abas e acima do conteúdo da tela, em vez de aparecerem espalhados.
+- **O ícone do RIT360 Premiado no menu lateral do WordPress passa a ser o da família RIT** — o mesmo que aparece ao lado dos outros produtos RIT instalados no site.
+- **Endereços antigos de qualquer seção que você tenha salvo nos favoritos continuam funcionando.** Quem abrir um link de uma aba sem ter o papel necessário vê, dentro do painel, a mensagem "Você não tem permissão para acessar esta tela." — veja [Papéis](/papeis/).
+- **Nada muda em função, campo ou permissão de nenhuma tela.**
 
 ---
 

@@ -3,7 +3,7 @@ title: "Papéis"
 nav_order: 3
 permalink: /papeis/
 source_docs: [PRD_Bussola_Premiada.md#8.25]
-last_verified: 2026-07-05
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -12,6 +12,8 @@ status: publicado
 O plugin é usado por pessoas diferentes, com responsabilidades diferentes. Saber em qual papel você está ajuda a achar rápido o que precisa — e mantém cada pessoa com o acesso certo, nem mais, nem menos. As permissões usam as *capabilities* do WordPress e toda mudança de permissão é registrada.
 
 > **Como atribuir um papel:** o Administrador da organização define os papéis na aba **Configurações → Usuários**, marcando um ou mais papéis por pessoa. Uma pessoa pode acumular papéis (as permissões se somam). Passo a passo em [Gerenciar usuários e papéis](/guias/gerenciar-usuarios/).
+>
+> **Se você não tem acesso a uma tela** — por exemplo, abriu um endereço antigo salvo nos favoritos, ou alguém compartilhou um link de uma aba que seu papel não alcança —, o RIT360 Premiado mostra, dentro do próprio painel, a mensagem **"Você não tem permissão para acessar esta tela."** Não é erro: é a barra de abas mostrando só o que cada papel pode ver. Peça ao Administrador da organização o papel correspondente, em [Gerenciar usuários e papéis](/guias/gerenciar-usuarios/).
 
 ## Administrador do plugin
 

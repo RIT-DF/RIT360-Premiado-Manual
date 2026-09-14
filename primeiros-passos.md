@@ -4,9 +4,9 @@ nav_order: 2
 permalink: /primeiros-passos/
 role: admin
 routes: ["#/", "#/organizacao", "#/campanhas"]
-screenshots: [bp-01-dashboard, admin-abas-navegacao]
+screenshots: [bp-01-dashboard, admin-abas-navegacao, admin-abas-navegacao-mobile, rit-menu-icone]
 source_docs: [PRODUCT.md, PRD_Bussola_Premiada.md]
-last_verified: 2026-07-23
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -41,15 +41,23 @@ Você precisa de:
 
 ## Passo 1 — Abra o painel
 
-No menu lateral do WordPress, clique em **RIT360 Premiado** (uma entrada única). Você chega ao **Painel**, o cockpit da ferramenta: um resumo das campanhas, da arrecadação e dos próximos sorteios.
+No menu lateral do WordPress, clique em **RIT360 Premiado** (uma entrada única, com o mesmo ícone que os outros produtos da família RIT — é o que ajuda a reconhecer rápido qual é o nosso, numa lista com plugins de fabricantes diferentes). Você chega ao **Dashboard**, o cockpit da ferramenta: um resumo das campanhas, da arrecadação e dos próximos sorteios.
+
+![Ícone do RIT360 Premiado no menu lateral do WordPress, igual ao dos outros produtos da família RIT](/assets/screenshots/rit-menu-icone.png)
 
 ![Painel do RIT360 Premiado](/assets/screenshots/bp-01-dashboard.png)
 
-> **A partir da versão 2.9**, a navegação entre as seções (Painel, Campanhas, Templates, Auditoria, Configurações, Shortcodes e API) fica numa **barra de abas** dentro da própria tela do plugin, logo abaixo do cabeçalho — não mais em submenus do WordPress. Cada usuário vê só as abas que pode acessar.
->
-> ![Barra de abas de navegação](/assets/screenshots/admin-abas-navegacao.png)
+O painel do RIT360 Premiado usa o **cabeçalho e a barra de navegação da família RIT360**, os mesmos que você encontra nos outros produtos RIT — o que muda é só a moldura ao redor da tela; nenhuma função, campo ou permissão muda com isso.
 
-No topo, ao lado da logo, aparece o nome da seção em que você está e a versão do plugin. O botão **📖 Manual / Guia** leva sempre a esta documentação.
+No cabeçalho, ao lado da logo, aparece o nome da tela em que você está e a versão do plugin instalada; à direita ficam os botões **💬 Feedback** e **📖 Manual / Guia**, que leva sempre a esta documentação. Logo abaixo, a **barra de abas** leva a cada seção — **Dashboard, Campanhas, Templates, Auditoria, Configurações, Shortcodes e API e Licença** — e a aba em que você está aparece com um **traço âmbar** embaixo do nome. Cada pessoa vê só as abas que pode acessar; se você tinha um endereço antigo de alguma seção salvo nos favoritos, ele continua levando à tela certa.
+
+Quando o WordPress tem algum aviso para mostrar naquela tela (um alerta do plugin, uma pendência), ele aparece numa **faixa própria**, logo abaixo da barra de abas e acima do conteúdo — não mais espalhado pela tela.
+
+![Barra de abas de navegação, com a aba ativa sublinhada em âmbar e a faixa de avisos abaixo dela](/assets/screenshots/admin-abas-navegacao.png)
+
+No **celular**, o cabeçalho e as abas se empilham em vez de ficar lado a lado — a navegação continua toda visível, sem precisar abrir um menu à parte.
+
+![Cabeçalho e barra de abas no celular, com as abas quebrando em linhas](/assets/screenshots/admin-abas-navegacao-mobile.png)
 
 ## Passo 2 — Configure sua organização
 
